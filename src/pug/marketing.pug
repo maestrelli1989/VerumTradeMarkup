@@ -1,0 +1,222 @@
+extends layouts/_inner.pug
+
+block head-meta
+	+head-meta(
+	'Маркетинг - VerumTrade', 
+	'Маркетинг - VerumTrade', 
+	'https://verumtrade.com/marketing.html'
+	)
+
+block extra-js
+	script.
+		const link2 = document.getElementById('default-tooltip');
+		const tooltipWave = link2.querySelector('.tooltip-wave > span');
+		const waveInterval = {from: 1, to: 8};
+
+		const tweenWave = TweenMax.to(tooltipWave, 15, {
+			ease: 'Linear.easeNone',
+			repeat: -1,
+			yoyo: false,
+			x: '50%',
+			paused: true
+		});
+
+		let stateWave= 'paused';
+		new Nearby(link2, {
+			onProgress: (distance) => {
+				const time = lineEq(waveInterval.from, waveInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
+				tweenWave.timeScale(Math.min(Math.max(time,waveInterval.from),waveInterval.to));
+				
+				if ( distance < distanceThreshold.max && distance >= distanceThreshold.min && stateWave !== 'running' ) {
+					tweenWave.play();
+					stateWave = 'running';
+				}
+				else if ( (distance > distanceThreshold.max || distance < distanceThreshold.min) && stateWave !== 'paused' ) {
+					tweenWave.pause();
+					stateWave = 'paused';
+				}
+			}
+			
+		});
+
+block main-content
+	.marketing-page
+		.container
+			.row.first-block
+				.col-sm-3
+					table.referral-table
+						thead.blue-thead
+							tr
+								th Реферальная линия
+						tbody
+							tr
+								td
+									span 1 линия
+							tr
+								td
+									span 2 линия
+							tr
+								td
+									span 3 линия
+							tr
+								td
+									span 4 линия
+							tr
+								td
+									span 5 линия
+							tr
+								td
+									span 6 линия
+							tr
+								td
+									span 7 линия
+							tr
+								td
+									span 8 линия
+				.col-sm-3
+					table.percent-table
+						thead.green-thead
+							tr
+								th Процент от партнера
+						tbody
+							tr
+								td
+									span 7%
+							tr
+								td
+									span 4%
+							tr
+								td
+									span 2%
+							tr
+								td
+									span 1%
+							tr
+								td
+									span 1%
+							tr
+								td
+									span 1%
+							tr
+								td
+									span 1%
+							tr
+								td
+									span 1%
+				.col-sm-6
+					.content-wrapper
+						h6.pre-headline Комиссионные компании
+						h2.page-headline Комиссионные 
+							|
+							br
+							| за привлечение 
+							|
+							br
+							| новых инвесторов
+						p Компания выплачивает вам определенный % за продажу продукта (инвестиционного портфеля VerumTrade). 
+						p Каждый раз, когда по вашей рекомендации (реферальной ссылке вашего кабинета) покупается инвестпортфель VerumTrade, вам начисляется %.
+						+button-name("Стать партнёром")
+			.second-block
+				.row
+					.col-sm-12
+						h6.pre-headline Премии VerumTrade
+						h2.page-headline.ta-c Ранги и премии
+						p.ta-c Единоразово компания выплачивает премию при достижении определенного 
+							|
+							br
+							|
+							a(href="#").default-tooltip#default-tooltip объема инвестиций 
+								span.tooltip-wave
+									span
+							|  в вашей команде. Размер бонуса зависит от достигнутого ранга.
+				.row
+					.col
+						table.first-table
+							thead.green-thead
+								tr
+									th Категория лидера
+							tbody
+								tr
+									td
+										span 7%
+								tr
+									td
+										span 4%
+								tr
+									td
+										span 2%
+								tr
+									td
+										span 1%
+					.col
+						table.second-table
+							thead.blue-thead
+								tr
+									th Оборот ($)
+							tbody
+								tr
+									td
+										span 50 000$
+								tr
+									td
+										span 100 000$
+								tr
+									td
+										span 500 000$
+								tr
+									td
+										span 1 000 000$
+					.col
+						table.third-table
+							thead.green-thead
+								tr
+									th Пакет акций компании
+							tbody
+								tr
+									td
+										span -
+								tr
+									td
+										span -
+								tr
+									td
+										span 0.5% - акций
+								tr
+									td
+										span 1% - акций
+					.col
+						table.fourth-table
+							thead.blue-thead
+								tr
+									th Премия ($)
+							tbody
+								tr
+									td
+										span 2 000$
+								tr
+									td
+										span 5 000$
+								tr
+									td
+										span 20 000$
+								tr
+									td
+										span 50 000$
+			.row.third-block
+				.col
+					h6.pre-headline Вывод денег
+					h2.page-headline Ввод и вывод 
+						|
+						br
+						| денег через системы 
+						br
+						| Visa/Mastercard
+					p Наличие Visa/Mastercard в качестве систем оплаты и вывода средств еще раз доказывает, что компания ведет легальную деятельность и нацелена на долгосрочное развитие.
+					p Помимо традиционных и удобных для большинства клиентов ввода и вывода денежных средств, мы также предлагаем проводить финансовые операции в криптовалюте.
+				.col
+					img(src="./images/credit-card.png", alt="credit card", style="width: 525px; height: 501px;")
+			.feedback-block
+				h6.pre-headline Обратная связь
+				+feedback-block-headline("Остались вопросы?")
+				+feedback-block-content("Свяжитесь с нами через форму обратной связи")
+				+button-name("Задать вопрос")

@@ -1,0 +1,164 @@
+/**
+	Style Sheet for Verum Trade website project
+	version: 1.0
+	created: 12.11.2018
+	author: Serhii Tiutin
+	website: https://verumtrade.com
+	*/
+
+@import "vars"
+@import "snippets"
+
+@media (min-width: 1220px)
+	.container
+		max-width: 1220px
+		padding: 0px
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, a, figure
+	padding: 0
+	margin: 0
+
+ul, ol, dl
+	list-style-type: none
+
+.ta-c
+	text-align: center!important
+
+.pre-headline
+	font-size: 16px
+	font-family: $regular-font
+	color: #696969
+	line-height: 1.2
+	position: relative
+	text-align: center
+	&:before
+		position: absolute
+		display: block
+		content: ""
+		background-color: #366bf5
+		width: 48px
+		height: 2px
+		top: -20px
+		left: 50%
+		transform: translateX(-50%)
+
+
+.page-headline
+	font-size: 50px
+	font-family: $bold-font
+	color: #202020
+	line-height: 1.2
+	text-align: left
+	padding: 23px 0 40px
+
+table
+	width: 100%
+	border-radius: 5px
+	box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+	background-color: $white-color
+	margin-left: 6px
+	thead
+		tr
+			th
+				font-size: 18px
+				font-family: $bold-font
+				color: $white-color
+				line-height: 71px
+				text-align: center
+				border-top-left-radius: 3px
+				border-top-right-radius: 3px
+		&.blue-thead
+			background-image: -moz-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+			background-image: -webkit-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+			background-image: -ms-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+		&.green-thead
+			background-image: -moz-linear-gradient(90deg, #3da580 0%, #47c095 100%)
+			background-image: -webkit-linear-gradient(90deg, #3da580 0%, #47c095 100%)
+			background-image: -ms-linear-gradient(90deg, #3da580 0%, #47c095 100%)
+	tbody
+		border: 1px solid rgb(240, 240, 240)
+		text-align: center
+		font-size: 18px
+		font-family: $regular-font
+		tr
+			td
+				line-height: 62px
+				border-bottom: 1px solid rgb(240, 240, 240)
+				span
+					position: relative
+			&:last-child
+				td
+					border-bottom: none
+
+
+/* Feedback block */
+
+.feedback-block
+	width: 100%
+	max-width: 790px
+	height: 416px
+	background-color: $violet-color
+	margin: 0 auto
+	border-radius: 5px
+	text-align: center
+	padding-top: 90px
+	margin-bottom: 50px
+	.pre-headline
+		color: $white-color
+	.page-headline
+		color: $white-color
+		padding-top: 12px
+		padding-bottom: 19px
+	p
+		color: $white-color
+		font-family: $regular-font
+		font-size: 18px
+		padding-left: 9px
+
+
+.default-tooltip
+	display: inline-block
+	position: relative
+	color: #5e94ff
+	&:hover
+		text-decoration: none
+		color: #5e94ff
+	.tooltip-wave
+		width: 100%
+		height: 20px
+		position: absolute
+		bottom: -15px
+		left: 0
+		overflow: hidden
+		span 
+			position: absolute
+			left: -100%
+			width: 200%
+			height: 100%
+			background: url(../images/dotted-line.png) repeat-x center center
+			background-size: 50% auto
+
+
+
+
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+.fadeInAnimated 
+	opacity: 0
+	animation: fadeIn 2s forwards
+
+#first
+	animation-delay: 1s
+
+#second
+	animation-delay: 2s
+
+#third
+	animation-delay: 3s
+
+#fourth
+	animation-delay: 4s

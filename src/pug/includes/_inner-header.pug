@@ -1,0 +1,30 @@
+header.header
+    .container
+        nav.navbar.navbar-expand-lg
+            a.brand(href="/")
+                img(src="./images/logo.png", alt="logo", style="width: 40px; height: 40px;").d-inline-block.align-top
+                span VerumTrade
+            #navbarNavDropdown.collapse.navbar-collapse.main-menu
+                ul.navbar-nav
+                    li.nav-item.default-nav-item.active
+                        a.nav-link(href='/') Главная
+                    li.nav-item.default-nav-item
+                        a.nav-link(href='company.html') О компании
+                    li.nav-item.default-nav-item
+                        a.nav-link(href='faq.html') FAQ
+                    li.nav-item.default-nav-item.dropdown
+                        a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                            | Инфоцентр
+                        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                            a.dropdown-item(href='events.html') События
+                            a.dropdown-item(href='#') Новости
+                            a.dropdown-item(href='#') Отзывы
+                    li.nav-item.default-nav-item
+                        a.nav-link(href='contacts.html') Контакты
+                    li.nav-item.special-nav-item
+                        a.nav-link(href='https://backoffice.verumtrade.com/sign_in')
+                            i.zmdi.zmdi-lock
+                            span Войти
+                        a.nav-link(href='https://backoffice.verumtrade.com/sign_up')
+                            i.zmdi.zmdi-account-add
+                            span Регистрация

@@ -1,0 +1,1516 @@
+/**
+	Style Sheet for Verum Trade website project
+	version: 1.0
+	created: 12.11.2018
+	author: Serhii Tiutin
+	website: https://verumtrade.com
+	*/
+
+@import "base"
+
+/**
+	Header styles
+	*/
+
+.header
+	display: flex
+	align-items: center
+	height: 93px
+	border-bottom: 1px solid #f0f0f0
+	.navbar
+		padding: 0
+		height: 93px
+		.brand
+			margin: 0 0 0 15px
+			line-height: 37px
+			svg
+				width: 150px
+				height: 40px
+			span
+				font-size: 14px
+				font-family: $bold-font
+				color: $black-color
+				text-transform: uppercase
+				line-height: 1.2
+				display: inline-block
+				padding-left: 12px
+				letter-spacing: 1.1px
+		.main-menu
+			justify-content: flex-end
+			ul
+				align-items: center
+				.default-nav-item
+					padding-right: 40px
+					> a
+						color: $black-color
+						font-family: $bold-font
+						font-size: 16px
+						transition: all 500ms
+						text-decoration: none
+						line-height: 1.2
+						position: relative
+						padding: 0
+						&:before
+							position: absolute
+							display: block
+							content: ""
+							background-color: #366bf5
+							top: -37px
+							left: 0
+							width: 0%
+							height: 3px
+							transition: all 500ms
+						&:hover
+							color: #366bf5
+							text-decoration: none
+							&:before
+								width: 100%
+				.special-nav-item
+					padding: 15px 30px
+					border-radius: 5px
+					background-color: #eaf0fe
+					a
+						font-size: 16px
+						font-family: $bold-font
+						color: #94a6d0
+						line-height: 1.2
+						display: inline-block
+						transition: all 500ms
+						padding: 0
+						&:first-child
+							padding-right: 20px
+						&:hover
+							color: #667492
+							text-decoration: none
+						span
+							padding-left: 6.5px
+							display: inline-block
+				.dropdown-menu
+					border: 1px solid #f0f0f0
+					.dropdown-item
+						color: $black-color
+						font-family: $bold-font
+						font-size: 16px
+						transition: all 500ms
+						&:focus,
+						&:hover,
+						&:active,
+						&.active
+							background-color: #f0f0f0
+							color: #868687
+
+/**
+	Top footer styles
+	*/
+
+.top-footer
+	border-top: 1px solid #f0f0f0
+	border-bottom: 1px solid #f0f0f0
+	padding: 85px 0px 98px
+	.footer-menu
+		.footer-menu-col
+			.footer-menu-title
+				font-family: $bold-font
+				font-size: 16px
+				color: $black-color
+				line-height: 1.7
+				text-align: left
+				padding-bottom: 10px
+			.footer-menu-list
+				li
+					a, p
+						font-family: $regular-font
+						font-size: 16px
+						color: #868687
+						line-height: 2
+						text-align: left
+					a
+						transition: all 500ms
+						&:hover
+							text-decoration: none
+							color: #3469f5
+						.icon-wrapper
+							display: inline-block
+							width: 100%
+							max-width: 16px
+							text-align: left
+					.facebook-icon
+						span
+							display: inline-block
+							padding-left: 7px
+						&:hover
+							color: $facebook-color
+					.twitter-icon
+						span
+							display: inline-block
+							padding-left: 7px
+						&:hover
+							color: $twitter-color
+					.youtube-icon
+						span
+							display: inline-block
+							padding-left: 7px
+						&:hover
+							color: $youtube-color
+					.instagram-icon
+						span
+							display: inline-block
+							padding-left: 7px
+						&:hover
+							color: $instagram-color
+		.footer-menu-col-1
+			a
+				position: relative
+				left: 14px
+		.footer-menu-col-2
+			padding-top: 6px
+			.footer-menu-list,
+			.footer-menu-title
+				padding-left: 54px
+		.footer-menu-col-3
+			padding-top: 6px
+			.footer-menu-list,
+			.footer-menu-title
+				padding-left: 61px
+		.footer-menu-col-4
+			padding-top: 6px
+			.footer-menu-list,
+			.footer-menu-title
+				padding-left: 92px
+		.footer-menu-col-5
+			padding-top: 6px
+			.footer-menu-title
+				padding-left: 79px
+			.footer-menu-list
+				padding-left: 81px
+
+/**
+	Bottom footer styles
+	*/
+
+.bottom-footer
+	a, p
+		line-height: 94px
+		font-family: $regular-font
+		font-size: 16px
+		color: #868687
+	a
+		transition: all 500ms
+		&:hover
+			text-decoration: none
+			color: $black-color
+	.scroll-top-icon
+		position: relative
+		top: 2px
+		left: 7px
+		font-size: 18px
+	.col-sm-5
+		p
+			padding-left: 18px
+
+/**
+	Contacts page styles
+	*/
+
+.contacts-page
+	padding-top: 92px
+	padding-bottom: 50px
+	.pre-headline
+		margin-left: 17px
+	.page-headline
+		padding-left: 16px
+	.map-wrapper
+		padding-top: 83px
+		padding-left: 15px
+		padding-bottom: 53px
+		img
+			text-align: center
+			display: block
+			margin-left: auto
+			margin-right: auto
+	.flex-block
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		width: 100%
+		max-width: 850px
+		margin: 20px auto 0px
+		.flex-left
+			width: 100%
+			max-width: 310px
+			padding-left: 20px
+			.contacts-wrapper
+				.contact-item
+					border-radius: 5px
+					background-color: $white-color
+					transition: all 500ms
+					box-shadow: none
+					position: relative
+					border: 1px solid rgb(240, 240, 240)
+					width: 100%
+					max-width: 275px
+					height: 81px
+					padding: 17px 20px 20px 72px
+					margin-bottom: 25px
+					span
+						font-family: $regular-font
+						font-size: 18px
+						line-height: 1.25
+						color: #696969
+						display: block
+						text-align: left
+					a
+						font-family: $bold-font
+						font-size: 18px
+						line-height: 1.2
+						color: $black-color
+						display: block
+						text-align: left
+						&:hover
+							text-decoration: none
+					&:hover
+						box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+					&:before
+						position: absolute
+						display: block
+						content: ""
+						background-repeat: no-repeat
+						width: 38px
+						height: 38px
+						top: 20px
+						left: 20px
+					&:first-child
+						&:before
+							background-image: url("../images/call-answer.png")
+					&:nth-child(2)
+						&:before
+							background-image: url("../images/whatsapp.png")
+					&:last-child
+						&:before
+							background-image: url("../images/telegram.png")
+		.flex-right
+			width: 100%
+			max-width: 525px
+			.form
+				padding: 30px
+				box-shadow: none
+				transition: all 500ms
+				border: 1px solid #f0f0f0
+				border-radius: 5px
+				&:hover
+					box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+				.form-group
+					margin-bottom: 11px
+				.form-control
+					border: 1px solid #c3c3c3
+					border-radius: 5px
+					width: 100%
+					transition: all 500ms
+					padding: 20px
+					font-family: $regular-font
+					font-size: 16px
+					color: #202020
+					&:hover,
+					&:active,
+					&:focus
+						border-color: #366bf5
+						outline: 0
+						box-shadow: none
+				input[type=text],
+				input[type=email]
+					line-height: 53px
+					height: 53px
+					position: relative
+				textarea.form-control
+					height: 104px
+					padding-top: 15px
+				.custom-btn
+					max-width: 207px
+
+/**
+	Gallery page styles
+	*/
+
+.gallery-page
+	padding-top: 92px
+	padding-bottom: 99px
+	.pre-headline
+		margin-left: 17px
+	.page-headline
+		padding-left: 16px
+	.flex-block
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		margin: 30px auto 0px
+		padding-left: 15px
+		.flex-item
+			flex: 1
+			width: 100%
+			max-width: 375px
+			border-radius: 5px
+			border: 1px solid #c3c3c3
+			.top-half
+				position: relative
+				.image
+					opacity: 1
+					display: block
+					width: 100%
+					height: auto
+					transition: 500ms ease
+					backface-visibility: hidden
+				.camera
+					position: absolute
+					top: 0
+					right: 0
+					background-image: url(../images/blue-segment.png)
+					background-repeat: no-repeat
+					background-position: bottom left
+					width: 62px
+					height: 62px
+					i
+						color: $white-color
+						position: relative
+						top: 10px
+						right: -35px
+				.middle
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+					height: 100%
+					width: 100%
+					opacity: 0
+					transition: 500ms ease
+					background-color: rgba(0,0,0,0.8)
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center					
+					.custom-btn
+						max-width: 248px
+			&:hover
+				.top-half
+					.image
+						opacity: 0.3
+					.middle
+						opacity: 1
+			.bottom-half
+				padding: 23px 29px 30px 30px
+				.location
+					color: #c3c3c3
+					text-align: left
+					display: inline-block
+					padding-left: 2px
+					span
+						font-size: 16px
+						font-family: $regular-font
+						line-height: 1.2
+						display: inline-block
+						padding-left: 7px
+				.date
+					color: #c3c3c3
+					text-align: left
+					display: inline-block
+					float: right
+					span
+						font-size: 16px
+						font-family: $regular-font
+						line-height: 1.2
+						display: inline-block
+						padding-left: 7px
+				.title
+					font-size: 18px
+					font-family: $bold-font
+					color: #202020
+					line-height: 1.2
+					text-align: left
+					padding: 11px 0px 14px
+				.share
+					.share-desc
+						font-size: 16px
+						font-family: $regular-font
+						line-height: 1.2
+						display: inline-block
+						color: #c3c3c3
+						span
+							display: inline-block
+							padding-left: 7px
+					.share-links
+						display: inline-block
+						float: right
+						a
+							display: inline-block
+							margin-left: 16px
+							color: #c3c3c3
+							i
+								transition: all 500ms
+							&:hover
+								.zmdi-facebook
+									color: $facebook-color
+								.zmdi-vk
+									color: $vk-color
+								.zmdi-google-plus-box
+									color: $google-plus-color
+								.zmdi-twitter
+									color: $twitter-color
+
+/**
+	FAQ page styles
+	*/
+
+.faq-page
+	padding-top: 92px
+	padding-bottom: 50px
+	.faq-page-wrapper
+		padding-bottom: 200px
+	.pre-headline
+		margin-left: 15px
+	.page-headline
+		padding-left: 15px
+	.faq-nav
+		border: 1px solid #c3c3c3
+		border-radius: 3px
+		padding: 4px
+		width: 100%
+		max-width: 407px
+		margin: 0 auto 50px
+		position: relative
+		left: 8px
+		.nav-link
+			font-size: 16px
+			font-family: $bold-font
+			color: #a6a6a6
+			line-height: 1.2
+			padding: 0
+			text-align: center
+			width: 100%
+			max-width: 132px
+			line-height: 55px
+			border-radius: 3px
+			background-image: none
+			transition: all 500ms
+			&.active
+				color: $white-color
+				background-image: -moz-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+				background-image: -webkit-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+				background-image: -ms-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+			&:hover
+				color: #3469f5
+			&.active
+				&:hover
+					color: $white-color
+	.tab-content
+		margin-left: 18px
+	.accordion
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+	.accordion
+		.card
+			width: 100%
+			max-width: 585px
+			margin-bottom: 30px
+			border: 1px solid rgba(0,0,0,.125)
+			border-bottom: 1px solid rgba(0,0,0,.125)!important
+			flex-direction: column
+			align-items: center
+			transition: all 500ms
+			border-radius: 5px!important
+			.card-header
+				background-color: transparent
+				padding: 25px 30px
+				border: none
+				position: relative
+				width: 100%
+				a
+					font-size: 18px
+					font-family: $bold-font
+					color: $black-color
+					line-height: 1.2
+					text-align: left
+					padding: 0
+					border: none
+					transition: all 500ms
+					span
+						display: inline-block
+						padding-right: 100px
+					&:hover,
+					&:active,
+					&:focus
+						text-decoration: none
+						outline: 0
+						box-shadow: none
+						cursor: pointer
+					&:after
+						font-family: Material-Design-Iconic-Font
+						content: "\f278"
+						top: 50%
+						position: absolute
+						right: 25px
+						transform: translateY(-50%)
+						color: #4f4f4f
+						font-size: 15px
+						transition: all 500ms
+						background-color: $white-color
+						border-radius: 50%
+						border: 1px solid rgba(0,0,0,.125)
+						width: 35px
+						height: 35px
+						text-align: center
+						display: flex
+						justify-content: center
+						flex-direction: column
+					&:hover
+						&:after
+							color: $white-color
+							background-color: #3469f5
+					&.collapsed
+						&:after
+							content: "\f273"
+			.card-body
+				font-size: 18px
+				font-family: $regular-font
+				color: #4f4f4f
+				line-height: 1.2
+				padding: 0 30px 25px
+				text-align: left
+				p
+					text-align: left
+			&:hover
+				box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+		.blue-card
+			border-color: #3469f5
+			border-bottom-color: #3469f5!important
+			box-shadow: none
+			&:hover
+				box-shadow: none
+	.feedback-block
+		position: relative
+		left: 7px
+		.pre-headline
+			margin-left: 6px
+		.page-headline
+			padding-left: 7px
+		.custom-btn
+			margin: 33px auto 0px
+			line-height: 55px
+			max-width: 220px
+			font-size: 16px
+			left: 6px
+
+/**
+	Marketing page styles
+	*/
+
+.marketing-page
+	padding-top: 100px
+	padding-bottom: 50px
+	.first-block
+		padding-bottom: 200px
+		.content-wrapper
+			padding-top: 23px
+			padding-left: 110px
+			.pre-headline
+				text-align: left
+				letter-spacing: -0.4px
+				&:before
+					left: 0
+					transform: translateX(0)
+			p
+				font-size: 18px
+				font-family: $regular-font
+				line-height: 25px
+				padding-left: 75px
+				padding-bottom: 28px
+				padding-right: 12px
+				letter-spacing: 0.5px
+				color: #505050
+			.custom-btn
+				max-width: 200px
+				margin: 0
+				margin-left: 75px
+				margin-top: 17px
+				font-family: $regular-font
+				font-size: 16px
+		.referral-table
+			margin-left: 19px
+			width: 100%
+			max-width: 280px
+			td
+				span
+					left: -7px
+					top: -2px
+		.percent-table
+			margin-left: 13px
+			width: 100%
+			max-width: 280px
+			td
+				span
+					left: -7px
+					top: -2px
+	.second-block
+		.pre-headline
+			margin-left: 10px
+		.page-headline
+			padding-bottom: 30px
+			padding-left: 12px
+		p
+			font-size: 18px
+			font-family: $regular-font
+			line-height: 23px
+			letter-spacing: 0px
+			padding-left: 15px
+			padding-bottom: 65px
+		.first-table
+			margin-left: 18px
+			width: 100%
+			max-width: 279px
+			td
+				span
+					left: -7px
+		.second-table
+			margin-left: 13px
+			width: 100%
+			max-width: 279px
+			td
+				span
+					left: -7px
+		.third-table
+			width: 100%
+			max-width: 279px
+			td
+				span
+					left: -7px
+		.fourth-table
+			width: 100%
+			max-width: 279px
+			td
+				span
+					left: -7px
+	.third-block
+		padding-top: 175px
+		padding-bottom: 220px
+		.pre-headline
+			text-align: left
+			margin-left: 20px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			padding-left: 15px
+		p
+			font-size: 18px
+			font-family: $regular-font
+			line-height: 25px
+			letter-spacing: 0.5px
+			padding-left: 93px
+			padding-right: 48px
+			padding-bottom: 30px
+		img
+			display: block
+			margin-left: 40px
+			margin-top: -5px
+	.feedback-block
+		position: relative
+		left: 7px
+		.pre-headline
+			margin-left: 6px
+		.page-headline
+			padding-left: 7px
+		.custom-btn
+			margin: 33px auto 0px
+			line-height: 55px
+			max-width: 220px
+			font-size: 16px
+
+/**
+	Company page styles
+	*/
+
+.company-page
+	padding-top: 50px
+	.first-block
+		padding-top: 92px
+		padding-bottom: 147px
+		.pre-headline
+			text-align: left
+			margin-left: 17px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			padding-left: 15px
+		p
+			font-size: 18px
+			font-family: $regular-font
+			line-height: 25px
+			padding-left: 90px
+			letter-spacing: 0.5px
+			color: #505050
+		img
+			display: block
+			margin-top: 16px
+			margin-left: 109px
+		.pulse
+			top: 196px
+			left: -3px
+			svg
+				width: 20px
+				height: 20px
+				top: 17px
+				position: relative
+		.btn-row
+			padding: 55px 0 0 91px
+			.custom-btn
+				max-width: 230px
+			.secondary-btn
+				margin-left: 20px
+	.second-block
+		padding: 157px 0 180px
+		background-color: $violet-color
+		.pre-headline
+			text-align: left
+			color: $white-color
+			margin-left: 18px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			color: $white-color
+			padding-left: 15px
+		.timeline-block
+			padding-top: 61px
+			padding-left: 18px
+			.timeline-description-block
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				left: 72px
+				padding-top: 67px
+				width: 1170px
+				position: relative
+				.item
+					.title
+						color: $white-color
+						font-size: 18px
+						font-family: $bold-font
+						line-height: 1.1
+						padding-bottom: 19px
+					.content
+						color: #f4f4f4
+						font-size: 18px
+						font-family: $light-font
+						line-height: 22px
+						letter-spacing: 0.1px
+				.item-1
+					width: 100%
+					max-width: 304px
+					.content
+						padding-right: 50px
+				.item-2
+					width: 100%
+					max-width: 273px
+					.content
+						padding-right: 55px
+				.item-3
+					width: 100%
+					max-width: 310px
+					.content
+						padding-right: 60px
+	.third-block
+		padding-top: 172px
+		padding-bottom: 149px
+		.pre-headline
+			text-align: left
+			margin-left: 20px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			padding-left: 17px
+			padding-bottom: 39px
+		p
+			font-size: 18px
+			font-family: $regular-font
+			line-height: 25px
+			padding-left: 94px
+			padding-right: 30px
+			letter-spacing: 0.5px
+		img
+			display: block
+			margin-top: -23px
+			margin-left: 9px
+		.btn-row
+			padding: 47px 0 0 93px
+			.custom-btn
+				max-width: 205px
+			.secondary-btn
+				margin-left: 20px
+	.fourth-block
+		padding: 156px 0 122px
+		background-color: $violet-color
+		.pre-headline
+			text-align: left
+			color: $white-color
+			margin-left: 18px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			color: $white-color
+			padding-left: 15px
+		.flex-block
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			flex-wrap: wrap
+			padding-left: 89px
+			.flex-item
+				width: 47.5%
+				padding-right: 60px
+				padding-bottom: 25px
+				p
+					font-size: 18px
+					font-family: $light-font
+					line-height: 26px
+					color: $white-color
+					letter-spacing: 0.55px
+	.faq-page
+		padding-top: 171px
+		padding-bottom: 61px
+	.sixth-block
+		padding-bottom: 51px
+		.feedback-block
+			position: relative
+			left: 9px
+			.pre-headline
+				margin-left: 7px
+			.page-headline
+				padding-left: 6px
+			.custom-btn
+				max-width: 220px
+				margin-top: 34px
+/**
+	Events page styles
+	*/
+
+.events-page
+	padding-top: 92px
+	padding-bottom: 69px
+	.pre-headline
+		margin-left: 15px
+	.page-headline
+		padding-bottom: 60px
+		margin-left: 15px
+	.event-item
+		width: 994px
+		height: 320px
+		border: 1px solid #c3c3c3
+		border-radius: 5px
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		margin: 0 auto 30px
+		transition: all 500ms
+		position: relative
+		left: 6px
+		&:hover
+			cursor: pointer
+			box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+		.photo-block
+			width: 100%
+			max-width: 445px
+			height: 100%
+		.info-block
+			padding: 47px 67px 53px
+			width: 100%
+			.line-1
+				padding-bottom: 18px
+			.line-2
+				padding-bottom: 10px
+			.line-3
+				padding-bottom: 14px
+			.line-4
+				padding-bottom: 19px
+			.event-type
+				font-size: 16px
+				font-family: $regular-font
+				color: #5d88f7
+				line-height: 32px
+				text-align: center
+				border-radius: 5px
+				background-color: #eaf0fe
+				width: 120px
+				height: 32px
+				display: inline-block
+				margin-right: 10px
+				text-align: center
+				position: relative
+				top: -3px
+			.is-free
+				font-size: 16px
+				font-family: $regular-font
+				color: #77c0a6
+				line-height: 32px
+				text-align: center
+				border-radius: 5px
+				background-color: #ebf6f2
+				width: 141px
+				height: 32px
+				display: inline-block
+				position: relative
+				top: -3px
+			.date
+				display: inline-block
+				font-size: 18px
+				font-family: $regular-font
+				color: #696969
+				line-height: 1.2
+				text-align: left
+				padding-right: 9px
+				span
+					display: inline-block
+					padding-left: 5px
+				i
+					color: #c3c3c3
+			.time
+				display: inline-block
+				font-size: 18px
+				font-family: $regular-font
+				color: #696969
+				line-height: 1.2
+				text-align: left
+				span
+					display: inline-block
+					padding-left: 5px
+				i
+					color: #c3c3c3
+			.headline
+				font-size: 18px
+				font-family: $bold-font
+				color: #202020
+				line-height: 1.2
+				text-align: left
+			.address
+				display: inline-block
+				font-size: 16px
+				font-family: $regular-font
+				color: #696969
+				line-height: 1.2
+				text-align: left
+				span
+					display: inline-block
+					padding-left: 10px
+					letter-spacing: 0.96px
+				i
+					color: #c3c3c3
+			.video-btn
+				display: inline-block
+				font-size: 16px
+				font-family: $bold-font
+				color: $white-color
+				border-radius: 5px
+				background-image: -moz-linear-gradient( 0deg, rgb(61,165,128) 0%, rgb(71,192,149) 100%)
+				background-image: -webkit-linear-gradient( 0deg, rgb(61,165,128) 0%, rgb(71,192,149) 100%)
+				background-image: -ms-linear-gradient( 0deg, rgb(61,165,128) 0%, rgb(71,192,149) 100%)
+				width: 100%
+				max-width: 177px
+				line-height: 55px
+				padding: 0 28px
+				text-decoration: none
+				transition: all 500ms
+				span
+					padding-left: 10px
+					display: inline-block
+				&:hover
+					text-decoration: none
+				&:active,
+				&:focus
+					outline: 0
+					box-shadow: none
+			.photo-btn
+				display: inline-block
+				font-size: 16px
+				font-family: $bold-font
+				color: $white-color
+				border-radius: 5px
+				background-image: -moz-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+				background-image: -webkit-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+				background-image: -ms-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+				width: 100%
+				max-width: 177px
+				line-height: 55px
+				padding: 0 28px
+				margin-right: 20px
+				text-decoration: none
+				transition: all 500ms
+				span
+					padding-left: 10px
+					display: inline-block
+				&:hover
+					text-decoration: none
+				&:active,
+				&:focus
+					outline: 0
+					box-shadow: none
+
+/**
+	Home page styles
+	*/
+
+.home-page-header
+	background-color: $violet-color
+	border-bottom: 1px solid $violet-color
+	z-index: 1
+	position: relative
+	.navbar
+		.brand
+			span
+				color: $white-color
+		.main-menu
+			ul
+				.default-nav-item
+					> a
+						color: $white-color
+						&:hover
+							color: $white-color
+				.special-nav-item
+					background-color: rgb(40, 46, 123)
+					a
+						color: $white-color
+						&:hover
+							color: #3469f5
+
+.home-page
+	.first-screen-block
+		background-color: $violet-color
+		height: 850px
+		position: relative
+		top: 0
+		left: 0
+		.banner-headline
+			font-size: 50px
+			color: $white-color
+			font-family: $bold-font
+			padding-top: 162px
+			padding-left: 16px
+		.banner-text
+			font-size: 19px
+			color: $white-color
+			font-family: $regular-font
+			padding-top: 34px
+			padding-left: 18px
+		.custom-btn
+			margin-top: 43px
+			margin-left: 18px
+	> .second-block
+		height: 275px
+		.flex-block
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			justify-content: space-between
+			flex-wrap: wrap
+			margin-left: 18px
+			.flex-item
+				flex: 1
+				background-image: linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+				background-image: linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+				background-image: linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+				width: 100%
+				max-width: 277px
+				height: 275px
+				border-radius: 5px
+				position: relative
+				top: -29px
+				text-align: center
+				transition: all 500ms
+				padding: 30px
+				svg
+					width: 85px
+					height: 85px
+					.cls-1
+						fill: #95b9ff
+				.item-title
+					color: $white-color
+					font-size: 18px
+					font-family: $bold-font
+					padding-top: 32px
+					line-height: 18px
+					position: relative
+					left: -4px
+					letter-spacing: 0.6px
+				.item-subtitle
+					color: $white-color
+					font-size: 18px
+					font-family: $light-font
+					position: relative
+					left: -4px
+					letter-spacing: 0.6px
+				.hidden-content
+					color: $white-color
+					font-size: 18px
+					line-height: 23px
+					font-family: $light-font
+					transition: all 500ms
+					text-align: left
+					opacity: 0
+					position: relative
+					top: 30px
+				&:hover
+					top: -40px
+					height: 407px
+					cursor: pointer
+					background-image: -moz-linear-gradient(0deg, #2da37b 0%, #41bc81 100%)
+					background-image: -webkit-linear-gradient(0deg, #2da37b 0%, #41bc81 100%)
+					background-image: -ms-linear-gradient(0deg, #2da37b 0%, #41bc81 100%)
+					.hidden-content
+						opacity: 1
+						top: 20px
+					svg
+						.cls-1
+							fill: #67dba5
+			.flex-item-1
+				padding-top: 58px
+				svg
+			.flex-item-2
+				padding-top: 48px
+				svg
+			.flex-item-3
+				padding-top: 49px
+				svg
+			.flex-item-4
+				padding-top: 50px
+				svg
+	.company-page-hp-top
+		.first-block
+			padding-bottom: 170px
+			.btn-row 
+				.custom-btn
+					max-width: 201px
+	.third-block
+		height: 808px
+		.pre-headline
+			margin-left: 14px
+		.page-headline
+			padding-left: 4px
+		.flex-block
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			flex-wrap: wrap
+			width: 100%
+			max-width: 1200px
+			box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+			position: relative
+			left: 19px
+			border-radius: 5px
+			.flex-item
+				flex: 1
+				padding-top: 50px
+				padding-left: 66px
+				padding-bottom: 59px
+				border-right: 1px solid #f0f0f0
+				position: relative
+				img
+					position: absolute
+					top: 188px
+					left: 0px
+				.item-title
+					font-family: $bold-font
+					font-size: 18px
+					line-height: 23px
+					padding-top: 141px
+					padding-bottom: 15px
+				.item-content
+					font-family: $light-font
+					font-size: 18px
+					line-height: 22px
+			.flex-item-4
+				border-right: none
+	.fourth-block
+		background-color: $violet-color
+		padding: 158px 0 174px
+		.pre-headline
+			color: $white-color
+			margin-left: 16px
+		.page-headline
+			color: $white-color
+			padding-left: 27px
+		.wrapper
+			background-image: url('../images/advantages.png')
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center center
+			width: 100%
+			height: 438px
+			margin: 3px auto 39px
+			position: relative
+			left: 6px
+			.left-side
+				position: absolute
+				left: 115px
+				top: 0
+			.right-side
+				position: absolute
+				right: -33px
+				top: 0
+			.advantage
+				position: relative
+				color: $white-color
+				font-size: 18px
+				line-height: 23px
+				font-family: $bold-font
+				width: 300px
+			.advantage-1
+				top: 135px
+			.advantage-2
+				top: 200px
+			.advantage-3
+				top: 265px
+			.advantage-4
+				top: 135px
+			.advantage-5
+				top: 200px
+			.advantage-6
+				top: 265px
+		.custom-btn
+			margin: 0 auto
+			display: block
+			max-width: 255px
+			position: relative
+			left: 10px
+	.fifth-block
+		padding-top: 170px
+		.pre-headline
+			margin-left: 16px
+		.page-headline
+			padding-left: 9px
+		.investor-block
+			border-top: 1px solid rgb(240, 240, 240)
+			border-left: 1px solid rgb(240, 240, 240)
+			border-right: 1px solid rgb(240, 240, 240)
+			width: 100%
+			margin: 30px auto 0
+			max-width: 935px
+			position: relative
+			left: 9px
+			box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+			.table-head
+				display: inline-block
+				border-bottom: 1px solid rgb(240, 240, 240)
+				width: 100%
+				.investor-type-head
+					display: inline-block
+					font-size: 18px
+					font-family: $regular-font
+					width: 100%
+					max-width: 300px
+					padding-left: 70px
+					padding-top: 34px
+					padding-bottom: 38px
+				.opportunities-type-head
+					display: inline-block
+					font-size: 18px
+					font-family: $regular-font
+			.table-body-item
+				display: flex
+				align-items: flex-start
+				width: 100%
+				border-bottom: 1px solid rgb(240, 240, 240)
+				.number-img
+					display: inline-block
+					width: 100%
+					max-width: 67px
+					span
+						font-family: $bold-font
+						font-size: 18px
+						color: #3469f5
+						position: relative
+						left: -22px
+						top: 0
+				.investor-type-body
+					display: inline-block
+					font-size: 18px
+					font-family: $bold-font
+					color: $black-color
+					line-height: 22px
+					width: 100%
+					max-width: 236px
+				.opportunities-type-body
+					display: inline-block
+					font-size: 18px
+					font-family: $regular-font
+					width: 100%
+					max-width: 430px
+				.graphic-content
+					display: inline-block
+					text-align: center
+					margin: 0 auto
+			.table-body-item-1
+				height: 180px
+				padding-top: 42px
+				.investor-type-body
+					padding-top: 3px
+				.opportunities-type-body
+					padding-top: 1px
+					padding-left: 3px
+					line-height: 22px
+				.graphic-content
+					img
+						position: relative
+						left: -10px
+						top: 6px
+			.table-body-item-2
+				height: 218px
+				padding-top: 26px
+				.investor-type-body
+					padding-top: 15px
+				.opportunities-type-body
+					padding-top: 15px
+					line-height: 21px
+					padding-left: 2px
+					span
+						display: inline-block
+						padding-top: 24px
+				.graphic-content
+					img
+						position: relative
+						left: -10px
+						top: 20px
+			.table-body-item-3
+				height: 188px
+				padding-top: 26px
+				.investor-type-body
+					padding-top: 16px
+				.opportunities-type-body
+					padding-top: 15px
+					line-height: 22px
+					padding-left: 2px
+				.graphic-content
+					img
+						position: relative
+						left: -9px
+						top: 20px
+	.sixth-block
+		padding-top: 152px
+		height: 1020px
+		.pre-headline
+			margin-left: 98px
+		.page-headline
+			padding-left: 112px
+	.seventh-block
+		background-color: $violet-color
+		height: 1080px
+		padding-top: 170px
+		.pre-headline
+			text-align: left
+			color: $white-color
+			margin-left: 16px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			color: $white-color
+			padding-left: 14px
+		p
+			color: $white-color
+			font-family: $light-font
+			font-size: 18px
+			line-height: 22px
+			padding-left: 107px
+			padding-top: 50px
+			letter-spacing: 0.01px
+		.flex-block
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			flex-wrap: wrap
+			width: 100%
+			.flex-item
+				flex: 1
+				.item-num
+					color: #4c84f4
+					font-size: 18px
+					font-family: $bold-font
+					text-align: center
+				.item-title
+					color: $white-color
+					font-size: 18px
+					line-height: 23px
+					font-family: $bold-font
+					padding-bottom: 25px
+				.item-content
+					color: $white-color
+					font-size: 18px
+					line-height: 23px
+					font-family: $light-font
+			.flex-item-1
+			.flex-item-2
+			.flex-item-3
+			.flex-item-4
+	.marketing-page
+		padding-top: 146px
+		padding-bottom: 0px
+		.first-block
+			padding-bottom: 2px
+		.third-block
+			padding-bottom: 27px
+			.page-headline
+				padding-left: 14px
+			p
+				padding-right: 40px
+	.company-page-hp-middle
+		padding-top: 15px
+	.company-page-hp-bottom
+		padding-top: 20px
+		.third-block
+			p
+				line-height: 26px
+				padding-left: 92px
+			.btn-row
+				padding: 43px 0 0 91px
+	.faq-page
+		padding-top: 23px
+		padding-bottom: 0
+		.faq-page-wrapper
+			padding-bottom: 177px
+	.eighth-block
+		background-color: $violet-color
+		padding-top: 157px
+		padding-bottom: 191px
+		.custom-btn
+			max-width: 280px
+			margin-top: 111px
+		.pre-headline
+			text-align: left
+			color: $white-color
+			margin-left: 18px
+			&:before
+				left: 0
+				transform: translateX(0)
+		.page-headline
+			color: $white-color
+			padding-left: 14px
+		p
+			color: $white-color
+			font-family: $regular-font
+			font-size: 18px
+			padding-left: 16px
+	.feedback-block
+		margin-top: 257px
+		margin-bottom: 103px
+		position: relative
+		left: 8px
+		.custom-btn
+			margin-top: 34px
+			max-width: 220px
+
+@import "media"

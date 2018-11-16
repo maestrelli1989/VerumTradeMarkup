@@ -1,0 +1,38 @@
+extends layouts/_inner.pug
+
+block head-meta
+	+head-meta(
+	'Контакты - VerumTrade', 
+	'Контакты - VerumTrade', 
+	'http://test.com'
+	)
+
+block main-content
+	.contacts-page
+		.container
+			h6.pre-headline Контакты
+			h1.page-headline.ta-c Форма обратной связи
+			.flex-block
+				.flex-left
+					.contacts-wrapper
+						.contact-item
+							span Телефон
+							a(href="tel:+12248175916") +1(224) 817-59-16 
+						.contact-item
+							span WhatsApp
+							a(href="https://api.whatsapp.com/send?phone=12248175906") +1(224) 817-59-16 
+						.contact-item
+							span Telegram
+							a(href="tg://resolve?domain=VerumTrade1") +1(224) 817-59-16 
+				.flex-right
+					form.form
+						.form-row
+							.form-group.col
+								input(type="text", name="name", placeholder="Ваше имя", required).form-control
+							.form-group.col
+								input(type="email", name="email", placeholder="Ваш email", required).form-control
+						.form-group
+							textarea(name="message", placeholder="Ваше сообщение", required).form-control
+						+submit-name("Задать вопрос")
+			.map-wrapper
+				img(src="images/map.png", alt="Map")

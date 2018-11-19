@@ -7,6 +7,12 @@ block head-meta
 	'https://verumtrade.com/faq.html'
 	)
 
+block extra-js
+	script(src="js/feedback-modal.js")
+
+block feedback-modal
+	include includes/_feedback-modal
+
 block main-content
 	.container
 		.faq-page
@@ -15,4 +21,4 @@ block main-content
 				h6.pre-headline Обратная связь
 				+feedback-block-headline("Не нашли ответа?")
 				+feedback-block-content("У вас остались вопросы? Не нашли ответа на свой вопрос?")
-				+button-name("Задать вопрос")
+				+feedback-button("Задать вопрос")

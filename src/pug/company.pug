@@ -4,8 +4,14 @@ block head-meta
 	+head-meta(
 	'Компания - VerumTrade', 
 	'Компания - VerumTrade', 
-	'http://test.com'
+	'http://verumtrade.com/company.html'
 	)
+
+block extra-js
+	script(src="js/feedback-modal.js")
+
+block feedback-modal
+	include includes/_feedback-modal
 
 block main-content
 	.company-page
@@ -65,6 +71,19 @@ block main-content
 									br
 									| периода.
 					.col-sm-4
+						.form-wrapper
+							form.form
+								h3 Хотите стать инвестором Verum Trade?
+								p Оставьте заявку в форме ниже 
+									br
+									| и получите доступ на почту
+								.form-group
+									input(type='text', name='name', placeholder='Введите ваше имя', required)
+								.form-group
+									input(type='email', name='email', placeholder='Введите ваш email', required)
+								.form-group
+									input(type='text', name='phone', placeholder='Введите ваш телефон')
+								+submit-name('Стать инвестором')
 		.faq-page
 			.container
 				include includes/_faq-snippet
@@ -74,4 +93,4 @@ block main-content
 					h6.pre-headline Обратная связь
 					+feedback-block-headline("Остались вопросы?")
 					+feedback-block-content("Свяжитесь с нами через форму обратной связи")
-					+button-name("Задать вопрос")
+					+feedback-button("Задать вопрос")

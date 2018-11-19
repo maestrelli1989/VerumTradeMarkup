@@ -31,3 +31,14 @@ const grayscaleInterval = {from: 1, to: 0};
 const borderInterval = {from: 0.1, to: 1};
 const graphicInterval = {from: 60, to: 0};
 const textInterval = {from: 0, to: -20};
+
+$(function() {
+	$(".meter > span").each(function() {
+		$(this)
+			.data("origWidth", $(this).width())
+			.width(0)
+			.animate({
+				width: $(this).data("origWidth")
+			}, 1200);
+	});
+});

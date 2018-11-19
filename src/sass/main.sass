@@ -35,6 +35,8 @@
 				display: inline-block
 				padding-left: 12px
 				letter-spacing: 1.1px
+			&:focus
+				outline: none
 		.main-menu
 			justify-content: flex-end
 			ul
@@ -247,7 +249,7 @@
 					transition: all 500ms
 					box-shadow: none
 					position: relative
-					border: 1px solid rgb(240, 240, 240)
+					border: 1px solid #e3e3e3
 					width: 100%
 					max-width: 275px
 					height: 81px
@@ -338,7 +340,7 @@
 	.pre-headline
 		margin-left: 17px
 	.page-headline
-		padding-left: 16px
+		padding-left: 8px
 	.flex-block
 		display: flex
 		flex-direction: row
@@ -352,7 +354,8 @@
 			width: 100%
 			max-width: 375px
 			border-radius: 5px
-			border: 1px solid #c3c3c3
+			border: 1px solid #f0f0f0
+			transition: all 500ms
 			.top-half
 				position: relative
 				.image
@@ -371,6 +374,8 @@
 					background-position: bottom left
 					width: 62px
 					height: 62px
+					transition: all 500ms
+					border-top-right-radius: 5px
 					i
 						color: $white-color
 						position: relative
@@ -390,15 +395,20 @@
 					display: flex
 					flex-direction: row
 					align-items: center
-					justify-content: center					
+					justify-content: center
+					border-radius: 5px			
 					.custom-btn
 						max-width: 248px
 			&:hover
+				box-shadow: 0 10px 80px rgba(0,0,0,.1)
+				border-color: transparent
 				.top-half
 					.image
 						opacity: 0.3
 					.middle
 						opacity: 1
+					.camera
+						opacity: 0
 			.bottom-half
 				padding: 23px 29px 30px 30px
 				.location
@@ -467,7 +477,7 @@
 	padding-top: 92px
 	padding-bottom: 50px
 	.faq-page-wrapper
-		padding-bottom: 200px
+		padding-bottom: 134px
 	.pre-headline
 		margin-left: 15px
 	.page-headline
@@ -710,8 +720,8 @@
 			font-family: $regular-font
 			line-height: 25px
 			letter-spacing: 0.5px
-			padding-left: 93px
-			padding-right: 48px
+			padding-left: 92px
+			padding-right: 43px
 			padding-bottom: 30px
 		img
 			display: block
@@ -882,6 +892,43 @@
 					line-height: 26px
 					color: $white-color
 					letter-spacing: 0.55px
+		.form-wrapper
+			background-color: $white-color
+			width: 100%
+			padding: 50px
+			padding-top: 43px
+			border-radius: 5px
+			margin-top: 60px
+			margin-left: 5px
+			max-width: 380px
+			.form-group
+				margin-bottom: 9px
+			h3
+				font-size: 24px
+				line-height: 28px
+				color: #202020
+				font-family: $bold-font
+				padding-bottom: 13px
+			p
+				font-size: 18px
+				line-height: 25px
+				color: #505050
+				font-family: $regular-font
+				padding-bottom: 21px
+			input
+				width: 100%
+				box-shadow: 0 3px 5px 0 rgba(205,214,227,0.17)
+				color: #696969
+				font-size: 16px
+				font-family: $regular-font
+				padding: 0 25px
+				transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+				line-height: 55px
+				border-radius: 5px
+				background-color: $white-color
+				border: 1px solid #e3e3e3
+			.custom-btn
+				max-width: 100%
 	.faq-page
 		padding-top: 171px
 		padding-bottom: 61px
@@ -890,6 +937,7 @@
 		.feedback-block
 			position: relative
 			left: 9px
+			margin-top: 66px
 			.pre-headline
 				margin-left: 7px
 			.page-headline
@@ -908,11 +956,11 @@
 		margin-left: 15px
 	.page-headline
 		padding-bottom: 60px
-		margin-left: 15px
+		margin-left: 4px
 	.event-item
 		width: 994px
 		height: 320px
-		border: 1px solid #c3c3c3
+		border: 1px solid #f0f0f0
 		border-radius: 5px
 		display: flex
 		flex-direction: row
@@ -924,6 +972,7 @@
 		&:hover
 			cursor: pointer
 			box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+			border-color: transparent
 		.photo-block
 			width: 100%
 			max-width: 445px
@@ -1091,7 +1140,8 @@
 .home-page
 	.first-screen-block
 		background-color: $violet-color
-		height: 850px
+		//height: 850px
+		height: 757px
 		position: relative
 		top: 0
 		left: 0
@@ -1110,6 +1160,15 @@
 		.custom-btn
 			margin-top: 43px
 			margin-left: 18px
+		.phone
+			position: absolute
+			right: 0
+			bottom: 0
+			z-index: 888888
+		.gradient
+			position: absolute
+			right: 0
+			bottom: 0
 	> .second-block
 		height: 275px
 		.flex-block
@@ -1136,8 +1195,8 @@
 				svg
 					width: 85px
 					height: 85px
-					.cls-1
-						fill: #95b9ff
+					#Shape, #Rectangle-path
+						fill: #274EB5
 				.item-title
 					color: $white-color
 					font-size: 18px
@@ -1175,8 +1234,24 @@
 						opacity: 1
 						top: 20px
 					svg
-						.cls-1
-							fill: #67dba5
+						#Shape, #Rectangle-path
+							fill: #207356
+						#Path-Copy,
+						#Path-Copy-2,
+						#Path-Copy-3,
+						#Path-Copy-4,
+						#Path-Copy-5,
+						#Path-Copy-6,
+						#Path-Copy-7,
+						#Path-Copy-8,
+						#Path-Copy-9,
+						#Path-Copy-10,
+						#Path-Copy-11,
+						#Path-Copy-12,
+						#Path-Copy-13,
+						#Path-Copy-14
+							fill: #67DBA5
+
 			.flex-item-1
 				padding-top: 58px
 				svg
@@ -1219,22 +1294,48 @@
 				padding-bottom: 59px
 				border-right: 1px solid #f0f0f0
 				position: relative
-				img
+				.info-img
 					position: absolute
 					top: 188px
 					left: 0px
+				.zmdi-close
+					color: #d52d2d
+					font-weight: 700
+					position: absolute
+					left: 5px
+					top: 20px
+				.zmdi-check
+					color: #44bc83
+					font-weight: 700
+					position: absolute
+					left: 5px
+					top: 20px
 				.item-title
 					font-family: $bold-font
 					font-size: 18px
 					line-height: 23px
-					padding-top: 141px
+					padding-top: 23px
 					padding-bottom: 15px
 				.item-content
 					font-family: $light-font
 					font-size: 18px
 					line-height: 22px
+			.flex-item-1
+				.desc-img
+					margin-top: 38px
+			.flex-item-2
+				.desc-img
+					margin-top: 34px
+					margin-left: 4px
+			.flex-item-3
+				.desc-img
+					margin-top: 40px
+					margin-left: 3px
 			.flex-item-4
 				border-right: none
+				.desc-img
+					margin-top: 40px
+					margin-left: 2px
 	.fourth-block
 		background-color: $violet-color
 		padding: 158px 0 174px
@@ -1461,6 +1562,9 @@
 		padding-bottom: 0px
 		.first-block
 			padding-bottom: 2px
+			.secondary-btn
+				margin-top: 18px
+				margin-left: 9px
 		.third-block
 			padding-bottom: 27px
 			.page-headline
@@ -1469,14 +1573,21 @@
 				padding-right: 40px
 	.company-page-hp-middle
 		padding-top: 15px
+		.custom-btn
+			margin-top: 80px
+			margin-left: 40px
+			max-width: 242px
 	.company-page-hp-bottom
 		padding-top: 20px
 		.third-block
+			height: 811px
 			p
 				line-height: 26px
 				padding-left: 92px
 			.btn-row
 				padding: 43px 0 0 91px
+			.page-headline
+				padding-left: 14px
 	.faq-page
 		padding-top: 23px
 		padding-bottom: 0

@@ -1,14 +1,24 @@
 /* Scroll top button */
 
+// $(function() {
+// 	var scrollTop = $("#scrollTop");
+// 	$(scrollTop).click(function() {
+// 		$('html, body').animate({
+// 			scrollTop: 0
+// 		}, 800);
+// 		return false;
+// 	});
+// });
+
 $(function() {
-	var scrollTop = $("#scrollTop");
-	$(scrollTop).click(function() {
+	var scrollBottom = $("#scrollBottom");
+	$(scrollBottom).click(function() {
 		$('html, body').animate({
-			scrollTop: 0
-		}, 800);
-		return false;
+			scrollTop: $("#scrollToBlock").offset().top
+		}, 2000);
 	});
 });
+
 
 /* Add blue-border to active faq accordion item */
 

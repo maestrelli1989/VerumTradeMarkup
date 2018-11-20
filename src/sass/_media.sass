@@ -1,1 +1,193 @@
 @import "vars"
+
+@media screen and (max-width: 1500px)
+	.top-footer
+		.footer-menu
+			.footer-menu-col-1,
+			.footer-menu-col-2,
+			.footer-menu-col-3,
+			.footer-menu-col-4,
+			.footer-menu-col-5
+				.footer-menu-list,
+				.footer-menu-title
+					padding-left: 0
+			.footer-menu-col-1
+				a
+					position: static
+	.bottom-footer
+		.col-sm-5
+			p
+				padding-left: 0
+	.faq-page
+		.faq-page-wrapper
+			padding-bottom: 30px
+		.pre-headline
+			margin-left: auto
+			margin-right: auto
+		.faq-nav
+			position: static
+		.page-headline
+			padding-left: 0
+		.tab-content
+			margin-left: auto
+			margin-right: auto
+		.accordion
+			justify-content: space-around
+	.gallery-page
+		padding-bottom: 70px
+		.pre-headline
+			margin-left: auto
+			margin-right: auto
+		.page-headline
+			padding-left: 0
+		.flex-block
+			padding-left: 0
+			justify-content: space-around
+			flex-wrap: wrap
+			.flex-item
+				flex: auto
+				max-width: 370px
+				margin-bottom: 30px
+	.events-page
+		.pre-headline
+			margin-left: auto
+			margin-right: auto
+		.page-headline
+			padding-left: 0
+			margin-left: auto
+			margin-right: auto
+		.event-item
+			position: static
+			height: auto
+			width: auto
+			max-width: 445px
+			flex-direction: column
+			margin: 0 auto 30px
+			.info-block
+				padding: 30px
+				.address
+					span
+						display: initial
+
+@media screen and (max-width: 992px)
+	.top-footer
+		padding: 45px 0
+		.footer-menu
+			.footer-menu-col-1
+				display: none
+			.footer-menu-col-2,
+			.footer-menu-col-3,
+			.footer-menu-col-4,
+			.footer-menu-col-5
+				display: flex
+				align-items: center
+				flex-direction: column
+				text-align: center
+			.footer-menu-col-4
+				.footer-menu-list
+					li
+						p
+							text-align: center
+			.footer-menu-col-5
+				.footer-menu-list
+					width: 100%
+	.bottom-footer
+		padding: 15px 0
+		.row
+			align-items: center
+			a, p
+				line-height: 26px
+			.col-md-4
+				text-align: center!important
+
+@media screen and (max-width: 767px)
+	#scroll-top-wrapper
+		order: 1
+
+@media screen and (max-width: 576px)
+	.feedback-block
+		padding-bottom: 75px
+		padding-left: 15px
+		padding-right: 15px
+		height: auto
+	.top-footer
+		padding: 30px 0
+	.faq-page
+		padding-top: 50px
+		.faq-nav
+			position: static
+			.nav-link
+				flex: 1
+				max-width: 100%
+		.feedback-block
+			position: static
+			margin: 0 auto
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			p
+				padding-left: 0
+				font-size: 16px
+				line-height: 24px
+			.custom-btn
+				position: static
+	.gallery-page
+		padding-top: 50px
+		padding-bottom: 50px
+		.flex-block
+			margin-top: 0px
+			.flex-item
+				.bottom-half
+					.share
+						.share-links
+							float: none
+							display: block
+							a
+								margin-left: 0
+								margin-right: 16px
+				&:last-child
+					margin-bottom: 0px
+	.events-page
+		padding-top: 50px
+		padding-bottom: 50px
+		.page-headline
+			padding-bottom: 40px
+		.event-item
+			max-width: 320px
+			.photo-block
+				max-width: 320px
+				img
+					max-width: 320px
+			.info-block
+				.line-1, .line-2, .line-3, .line-4
+					padding-bottom: 15px
+					text-align: center
+				.line-5
+					text-align: center
+				.event-type
+					position: static
+					font-size: 14px
+					margin: 0 auto 15px
+					display: block
+				.is-free
+					position: static
+					font-size: 14px
+					margin: 0 auto
+					display: block
+				.headline
+					 text-align: center
+				.address
+					text-align: center
+				.photo-btn
+					margin: 0 auto 15px
+				.video-btn
+					margin: 0 auto
+			&:last-child
+				margin-bottom: 0px
+	.page-headline
+		font-size: 34px
+		line-height: 40px
+		padding-left: 15px!important
+		padding-right: 15px!important

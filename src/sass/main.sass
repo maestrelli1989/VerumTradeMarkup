@@ -1140,37 +1140,45 @@
 .home-page
 	.first-screen-block
 		background-color: $violet-color
-		//height: 850px
 		height: 757px
 		position: relative
 		top: 0
 		left: 0
-		.container
+		.fixed-width-wrapper
+			width: 100%
+			max-width: 1920px
+			margin: 0 auto
 			position: relative
-			.banner-headline
-				font-size: 50px
-				color: $white-color
-				font-family: $bold-font
-				padding-top: 162px
-				padding-left: 16px
-			.banner-text
-				font-size: 19px
-				color: $white-color
-				font-family: $regular-font
-				padding-top: 34px
-				padding-left: 18px
-			.custom-btn
-				margin-top: 43px
-				margin-left: 18px
-			.phone 
+			.container
+				position: relative
+				.banner-headline
+					font-size: 50px
+					color: $white-color
+					font-family: $bold-font
+					padding-top: 132px
+					padding-left: 16px
+					position: relative
+					transition: all 500ms
+				.banner-text
+					font-size: 19px
+					color: $white-color
+					font-family: $regular-font
+					padding-top: 34px
+					position: relative
+					padding-left: 18px
+				.custom-btn
+					margin-top: 43px
+					margin-left: 18px
+				.phone 
+					position: absolute
+					right: -3px
+					top: 83px
+					z-index: 888888
+					margin-top: 25px
+			.gradient
 				position: absolute
 				right: 0
-				top: 60px
-				z-index: 888888
-		.gradient
-			position: absolute
-			right: 0
-			bottom: 0
+				top: 31px
 	> .second-block
 		height: 275px
 		.flex-block

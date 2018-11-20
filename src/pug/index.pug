@@ -21,20 +21,31 @@ block investor-modal
 block main-content
 	.home-page
 		.first-screen-block
-			.container
-				h1.banner-headline.fadeInAnimated#first Зарабатывайте до 25% в месяц
-					br
-					| с ежедневными выплатами 
-					br
-					| на Visa/Mastercard
-				p.banner-text.fadeInAnimated#second С командой ТОП-1 криптоаналитика по версии TradingView
-				a(href="#").custom-btn.fadeInAnimated#third
-					span Подробнее
-					svg#button(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 36.1 25.8', enable-background='new 0 0 36.1 25.8', xml:space='preserve')
-						g
-							polyline(fill='none', stroke='#FFFFFF', stroke-width='3', stroke-miterlimit='10', points='22.2,1.1 34,12.9 22.2,24.7')
-				img.phone.fadeInAnimated#nineth(src="./images/phone.png")
-			img.gradient.fadeInAnimated#fourth(src="./images/gradient.png")
+			.fixed-width-wrapper
+				.container
+					h1.banner-headline.toTopAnimated#first Зарабатывайте до 25% в месяц
+						br
+						| с ежедневными выплатами 
+						br
+						| на Visa/Mastercard
+					p.banner-text.toTopAnimated#second С командой ТОП-1 криптоаналитика по версии TradingView
+					a(href="#").custom-btn.toTopAnimated#third
+						span Подробнее
+						svg#button(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 36.1 25.8', enable-background='new 0 0 36.1 25.8', xml:space='preserve')
+							g
+								polyline(fill='none', stroke='#FFFFFF', stroke-width='3', stroke-miterlimit='10', points='22.2,1.1 34,12.9 22.2,24.7')
+					.white-circle.fadeInAnimated#fifth
+					.white-circle.fadeInAnimated#sixth
+					.white-circle.fadeInAnimated#seventh
+					.white-circle.fadeInAnimated#eighth
+					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-1.fadeInAnimated#fifth
+					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-2.fadeInAnimated#sixth
+					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-3.fadeInAnimated#seventh
+					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-4.fadeInAnimated#eighth
+					img.phone.toTopAnimated#nineth(src="./images/phone.png")
+					#scrollBottom.toTopAnimated
+						img(src="./images/move-to-next-screen.png", alt="Move to next screen")
+				img.gradient.fadeInAnimated#fourth(src="./images/gradient.png")
 		.second-block
 			.container
 				.flex-block
@@ -58,7 +69,7 @@ block main-content
 						.item-title Юридический договор
 						.item-subtitle с инвестором
 						.hidden-content Lorem ipsum dolor sit amet
-		.company-page.company-page-hp-top
+		.company-page.company-page-hp-top#scrollToBlock
 			.first-block
 				.container
 					.row

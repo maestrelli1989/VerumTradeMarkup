@@ -1,4 +1,4 @@
-/* Feedback modal */
+/* Investor modal */
 
 var investorModal = document.getElementById('investorModal');
 var investorModalTrigger1 = document.getElementById("investorModalTrigger1");

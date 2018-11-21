@@ -1,14 +1,16 @@
 /* Scroll top button */
 
-// $(function() {
-// 	var scrollTop = $("#scrollTop");
-// 	$(scrollTop).click(function() {
-// 		$('html, body').animate({
-// 			scrollTop: 0
-// 		}, 800);
-// 		return false;
-// 	});
-// });
+$(function() {
+	var scrollTop = $("#scrollTop");
+	$(scrollTop).click(function() {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 1000);
+		return false;
+	});
+});
+
+/* Scroll bottom button */
 
 $(function() {
 	var scrollBottom = $("#scrollBottom");
@@ -18,7 +20,6 @@ $(function() {
 		}, 2000);
 	});
 });
-
 
 /* Add blue-border to active faq accordion item */
 

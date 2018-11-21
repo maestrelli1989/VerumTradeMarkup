@@ -19,6 +19,7 @@
 			p
 				padding-left: 0
 	.faq-page
+		padding-bottom: 70px
 		.faq-page-wrapper
 			padding-bottom: 30px
 		.pre-headline
@@ -33,6 +34,18 @@
 			margin-right: auto
 		.accordion
 			justify-content: space-around
+		.feedback-block
+			position: static
+			margin-bottom: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			p 
+				padding-left: 0
+			.custom-btn
+				position: static
 	.gallery-page
 		padding-bottom: 70px
 		.pre-headline
@@ -44,11 +57,13 @@
 			padding-left: 0
 			justify-content: space-around
 			flex-wrap: wrap
+			margin-top: 0
 			.flex-item
 				flex: auto
 				max-width: 370px
-				margin-bottom: 30px
+				margin-bottom: 0px
 	.events-page
+		padding-bottom: 70px
 		.pre-headline
 			margin-left: auto
 			margin-right: auto
@@ -68,6 +83,293 @@
 				.address
 					span
 						display: initial
+			&:last-child
+				margin-bottom: 0
+	.contacts-page
+		padding-bottom: 70px
+		.pre-headline
+			margin-left: auto
+			margin-right: auto
+		.page-headline
+			padding-left: 0
+		.flex-block
+			margin-top: 0
+			position: static
+			.flex-left
+				padding-left: 0
+				.contacts-wrapper
+					.contact-item
+						&:last-child
+							margin-bottom: 0
+		.map-wrapper
+			padding-left: 0
+			padding-bottom: 0
+			padding-top: 70px
+	.marketing-page
+		padding-top: 72px
+		padding-bottom: 70px
+		.first-block
+			padding-bottom: 120px
+			.content-wrapper
+				p
+					padding-right: 0
+		.second-block
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0px
+			p
+				padding-left: 0px
+			table
+				margin-left: 0!important
+				max-width: 100%!important
+		.third-block
+			padding: 120px 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+		.feedback-block
+			position: static
+			margin-bottom: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			p 
+				padding-left: 0
+			.custom-btn
+				position: static
+	.company-page
+		padding-bottom: 70px
+		.first-block
+			padding-top: 42px
+			padding-bottom: 70px
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0px
+		.second-block
+			padding: 120px 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			.timeline-block
+				padding-left: 0
+		.third-block
+			padding: 120px 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+		.fourth-block
+			padding: 120px 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			.form-wrapper
+				margin-left: auto
+				margin-right: auto
+		.faq-page
+			padding: 120px 0 90px
+			.faq-page-wrapper
+				padding-bottom: 0
+		.sixth-block
+			padding-bottom: 0
+			.feedback-block
+				position: static
+				margin-bottom: 0
+				margin-top: 0
+				.pre-headline
+					margin-left: 0
+					margin-right: 0
+				.page-headline
+					padding-left: 0
+				p
+					padding-left: 0
+	.page-headline
+		font-size: 45px!important
+		line-height: 50px!important
+		padding-top: 25px!important
+		padding-bottom: 30px!important
+
+@media screen and (max-width: 1350px)
+	br
+		display: none!important
+	.marketing-page
+		.first-block
+			.content-wrapper
+				padding-left: 45px
+				p
+					padding-left: 0
+				.custom-btn
+					margin-left: 0
+		.third-block
+			p
+				padding-left: 0
+				br
+					display: none
+			img
+				width: 100%!important
+				max-width: 400px!important
+				height: auto!important
+				margin: 0 auto
+	.company-page
+		.first-block
+			p
+				padding-left: 0
+				padding-right: 0
+			.btn-row
+				padding-left: 0
+			.pulse
+				position: relative
+				left: 0
+				top: 60px
+			img
+				width: 100%!important
+				max-width: 400px!important
+				height: auto!important
+				margin: 0 auto
+		.second-block
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			.timeline-block
+				padding-top: 0
+				flex-wrap: wrap
+				img
+					display: none
+				.timeline-description-block
+					position: static
+					width: 100%
+					padding-top: 0
+					.item
+						width: 100%!important
+						max-width: 100%!important
+						flex: 1
+						.num
+							display: block
+						.title
+							text-align: center
+						.content
+							padding: 10px!important
+							text-align: center
+							font-size: 16px
+							line-height: 24px
+							br
+								display: none
+		.third-block
+			p
+				padding-left: 0
+				padding-right: 0
+				font-size: 16px
+				line-height: 24px
+			.btn-row
+				padding-left: 0
+			img
+				width: 100%!important
+				max-width: 400px!important
+				height: auto!important
+				margin: 50px auto 0
+		.fourth-block
+			.flex-block
+				padding-left: 0
+				padding-right: 0
+				align-items: flex-start
+				justify-content: space-between
+				flex-wrap: wrap
+				.flex-item
+					width: 100%
+					max-width: 100%
+					padding: 10px 0!important
+					p
+						font-size: 16px
+						line-height: 24px
+					br
+						display: none
+			.form-wrapper
+				p
+					br
+						display: none
+
+@media screen and (max-width: 1200px)
+	.header
+		.navbar
+			.main-menu
+				display: none!important
+	.navbar-toggler
+		span
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz8+WlpZLS0uFhYX5+fnHx8eqqqpnZ2d3d3ezs7OSkpLU1NStra0ODg7f399xcXHu7u4/Pz8WFhYzMzMkJCQ6Ojq9vb1aWlra2tqjo6N9fX1fX18dHR2EhIRxo4S7AAACW0lEQVR4nO3dCU4DMQyF4TAt032hC6VAy/1viUYFAUKyM00ky57/O8F7AlKSWklKAAAAAAAAAAAAAAAAADAAk+Vs7MdsOelXb/f+4M/7Lr/g0jrsnZaZ/dqTddK7ndqsggfrnAUOORWP1imLHPWCj9YZCz1qBbfWCYttlYYz64DFZnLB1jpfBfJis7COV8FCbDi3jlfBXGy4t45XwV5suLGOV8FGbGidrgqx4bN1ugqexYZn63gVnMWGXvdNv43EhivreBWsxIYBFlN5KU1pah2w2FRpmDzvfzsHrWB6tY5Y6FVtmNbWGYus9YIpvVmnLPCWUzCliXXOu2UfC7c+N1HzrLPEL7uRt0PT06jHkfeXbeOHdvwEAAAAAAAAAAA8a5vpyI9p0+d7p87L2Pq7pN7GLz36NVfruHe5NrkF/Q6zq2PsNxfrnAUuOQWfrFMWedILep/0lqe8U4Rhfe1jw+8q801bbazzVSAX9Dss9EMeG/qwjleB/Gvq75+1/8ZiQ+/TpR15wtQ6XRUD/xnG/zv0/4GvraXxPw8jLDVywQC/ptr/pfH3FvH3hwPY4w/gnMbzapN51jaA89IU/8y7E/17CwAAAAAAAAAA4Ense6Ki3/UV/r42v2NDmXfuhb83Mfzdl/HvL/U+YareQRv/HuHwd0HHv887/p3s8e/Vj/82gnW6KsSG/pdSbTGN/86Mz23TX/JbQd6nvDvypLf/UX11WD/8u2sDeDvP8Rj7TcYwe/g3LAfwDmn8t2ST3z1U7nvAaQBvOneCv8sNAAAAAAAAAAAAAAAAAD59ArTXU0DNDGfMAAAAAElFTkSuQmCC)
+	table
+		thead
+			tr
+				th
+					font-size: 16px
+					line-height: 24px
+					padding: 15px
+					height: 78px
+		tbody
+			tr
+				td
+					font-size: 14px
+					line-height: 45px
+					span
+						position: static
+	.gallery-page
+		.flex-block
+			justify-content: space-between
+			flex-direction: column
+			.flex-item
+				max-width: 350px
+				margin-bottom: 30px
+				.bottom-half
+					.title
+						text-align: center
+					.share
+						text-align: center
+						.share-desc
+							i
+								display: none
+						.share-links
+							float: none
+							display: block
+				&:last-child
+					margin-bottom: 0px
+	.company-page
+		.first-block
+			img
+				max-width: 400px
+				margin: 0 auto
+		.second-block
+			padding: 90px 0
+		.third-block
+			padding: 90px 0
+		.fourth-block
+			padding: 90px 0
+		.faq-page
+			padding-top: 90px
+			padding-bottom: 40px
+	.marketing-page
+		.first-block
+			padding-bottom: 90px
+		.second-block
+			p
+				padding-bottom: 30px
+		.third-block
+			padding: 90px 0
 
 @media screen and (max-width: 992px)
 	.top-footer
@@ -99,26 +401,144 @@
 				line-height: 26px
 			.col-md-4
 				text-align: center!important
-
-@media screen and (max-width: 767px)
+	.contacts-page
+		.flex-block
+			flex-direction: column
+			align-items: center
+			.flex-right
+				.form
+					.custom-btn
+						max-width: 100%
+			.flex-left
+				.contacts-wrapper
+					.contact-item
+						margin: 0 auto 15px
+		.map-wrapper
+			display: none
+	.company-page
+		.first-block
+			padding-top: 42px
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				text-align: center
+			.btn-row
+				margin: 0 auto
+				text-align: center
+			.pulse
+				margin: 25px auto 50px
+				top: 14px
+			img
+				max-width: 320px!important
+				margin: 0 auto
+		.second-block
+			.timeline-block
+				.timeline-description-block 
+					.item
+						.num
+							padding-bottom: 20px
+						.title
+							height: 57px
+							padding-bottom: 0px
+							padding-left: 5px
+							padding-right: 5px
+							font-size: 16px
+							line-height: 24px
+		.third-block
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				text-align: center
+			.btn-row
+				margin: 0 auto
+				text-align: center
+			img
+				max-width: 320px!important
+				margin: 0 auto
+	.marketing-page
+		.first-block
+			.col-md-12
+				order: -1
+			.content-wrapper
+				padding-left: 0
+				.pre-headline
+					text-align: center
+					&:before
+						left: 50%
+						transform: translateX(-50%)
+				.page-headline
+					text-align: center
+				p
+					padding-bottom: 15px
+					text-align: center
+				.custom-btn
+					margin: 15px auto 45px
+					text-align: center
+					display: block
+			.referral-table,
+			.percent-table
+				margin: 0 auto
+		.second-block
+			.first-table, .second-table
+				margin-bottom: 30px
+		.third-block
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				text-align: center
+				padding-right: 0
+				padding-bottom: 15px
+			img
+				max-width: 320px!important
+				margin: 0 auto
+				
+@media screen and (max-width: 823px)
 	#scroll-top-wrapper
 		order: 1
-
-@media screen and (max-width: 576px)
 	.feedback-block
-		padding-bottom: 75px
-		padding-left: 15px
-		padding-right: 15px
 		height: auto
+		padding: 85px 15px 70px
 	.top-footer
 		padding: 30px 0
 	.faq-page
 		padding-top: 50px
 		.faq-nav
 			position: static
+			margin-bottom: 30px
 			.nav-link
 				flex: 1
 				max-width: 100%
+		.accordion
+			.card
+				margin-bottom: 15px
+				.card-header
+					padding: 15px
+					a
+						font-size: 16px
+						line-height: 24px
+						span
+							padding-right: 0
+						&:after
+							display: none
+				.card-body
+					font-size: 16px
+					line-height: 24px
+					padding: 0 15px 15px
 		.feedback-block
 			position: static
 			margin: 0 auto
@@ -140,13 +560,22 @@
 			margin-top: 0px
 			.flex-item
 				.bottom-half
+					.title
+						text-align: center
 					.share
+						text-align: center
+						.share-desc
+							i
+								display: none
 						.share-links
 							float: none
 							display: block
 							a
 								margin-left: 0
-								margin-right: 16px
+								margin-right: 25px
+								font-size: 32px
+								&:last-child
+									margin-right: 0
 				&:last-child
 					margin-bottom: 0px
 	.events-page
@@ -156,10 +585,12 @@
 			padding-bottom: 40px
 		.event-item
 			max-width: 320px
+			border-radius: 5px
 			.photo-block
 				max-width: 320px
 				img
 					max-width: 320px
+					border-radius: 5px
 			.info-block
 				.line-1, .line-2, .line-3, .line-4
 					padding-bottom: 15px
@@ -178,16 +609,134 @@
 					display: block
 				.headline
 					 text-align: center
+					 line-height: 24px
 				.address
 					text-align: center
+					line-height: 20px
+					font-size: 16px
 				.photo-btn
 					margin: 0 auto 15px
 				.video-btn
 					margin: 0 auto
 			&:last-child
 				margin-bottom: 0px
+	.contacts-page
+		padding-top: 50px
+		.flex-block
+			margin-top: 0px
+	.marketing-page
+		padding-top: 27px
+		.first-block
+			.content-wrapper
+				.pre-headline
+					padding-left: 0px!important
+					padding-right: 0px!important
+				p
+					font-size: 16px
+					line-height: 24px
+		.second-block
+			p
+				font-size: 16px
+				line-height: 24px
+			.default-tooltip
+				.tooltip-wave
+					bottom: -10px
+		.third-block
+			padding: 85px 0 70px
+			p
+				font-size: 16px
+				line-height: 24px
+	.company-page
+		padding-top: 8px
+		.first-block
+			p
+				font-size: 16px
+				line-height: 24px
+		.second-block
+			padding: 85px 0 70px
+		.third-block
+			padding: 85px 0 70px
+		.fourth-block
+			padding: 85px 0 70px
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			.form-wrapper
+				margin-top: 30px
+				h3
+					text-align: center
+				p
+					font-size: 16px
+					line-height: 24px
+		.faq-page
+			padding: 85px 0 40px
+	.feedback-block
+		p
+			font-size: 16px
+			line-height: 24px
+			padding-left: 15px!important
+			padding-right: 15px!important
 	.page-headline
-		font-size: 34px
-		line-height: 40px
+		font-size: 34px!important
+		line-height: 40px!important
 		padding-left: 15px!important
 		padding-right: 15px!important
+
+@media screen and (max-width: 767px)
+	.company-page
+		.second-block
+			.timeline-block
+				.timeline-description-block
+					flex-direction: column
+					.item
+						flex: none
+						padding-top: 15px
+						.num
+							padding-bottom: 10px
+						.title
+							height: auto
+						&:first-child
+							padding-top: 0
+	.percent-table-wrap
+		width: 49.5%
+		padding-left: 0
+	.referral-table-wrap
+		width: 49.5%
+		padding-right: 0
+	.second-table-wrap, .fourth-table-wrap
+		width: 49.5%
+		padding-left: 0
+	.first-table-wrap, .third-table-wrap
+		width: 49.5%
+		padding-right: 0
+
+@media screen and (max-width: 450px)
+	.company-page
+		.first-block
+			.btn-row
+				padding: 30px 0
+				.secondary-btn
+					margin-left: auto
+					margin-top: 15px
+		.third-block
+			.btn-row
+				padding: 30px 0
+				.secondary-btn
+					margin-left: auto
+					margin-top: 15px
+
+@media screen and (max-width: 350px)
+	.page-headline
+		font-size: 26px!important
+		line-height: 32px!important
+	.events-page
+		.event-item
+			max-width: 300px
+			.photo-block
+				max-width: 300px
+				img
+					max-width: 100%

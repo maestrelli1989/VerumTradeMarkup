@@ -15,14 +15,14 @@ block investor-modal
 
 block extra-js
 	script(src="js/feedback-modal.js")
-	script(src="js/investor-modal.js")
+	script(src="js/investor-modal-single.js")
 	script(src="js/infinite-decoration.js")
 
 block main-content
 	.marketing-page
 		.container
 			.row.first-block
-				.col-sm-3
+				.col-lg-3.col-md-6.referral-table-wrap
 					table.referral-table
 						thead.blue-thead
 							tr
@@ -52,7 +52,7 @@ block main-content
 							tr
 								td
 									span 8 линия
-				.col-sm-3
+				.col-lg-3.col-md-6.percent-table-wrap
 					table.percent-table
 						thead.green-thead
 							tr
@@ -82,7 +82,7 @@ block main-content
 							tr
 								td
 									span 1%
-				.col-sm-6
+				.col-lg-6.col-md-12
 					.content-wrapper
 						h6.pre-headline Комиссионные компании
 						h2.page-headline Комиссионные 
@@ -123,7 +123,7 @@ block main-content
 									span
 							|  в вашей команде. Размер бонуса зависит от достигнутого ранга.
 				.row
-					.col
+					.col-lg-3.col-md-6.first-table-wrap
 						table.first-table
 							thead.green-thead
 								tr
@@ -141,7 +141,7 @@ block main-content
 								tr
 									td
 										span 1%
-					.col
+					.col-lg-3.col-md-6.second-table-wrap
 						table.second-table
 							thead.blue-thead
 								tr
@@ -159,7 +159,7 @@ block main-content
 								tr
 									td
 										span 1 000 000$
-					.col
+					.col-lg-3.col-md-6.third-table-wrap
 						table.third-table
 							thead.green-thead
 								tr
@@ -177,7 +177,7 @@ block main-content
 								tr
 									td
 										span 1% - акций
-					.col
+					.col-lg-3.col-md-6.fourth-table-wrap
 						table.fourth-table
 							thead.blue-thead
 								tr
@@ -196,7 +196,7 @@ block main-content
 									td
 										span 50 000$
 			.row.third-block
-				.col
+				.col-lg-6.col-md-12
 					h6.pre-headline Вывод денег
 					h2.page-headline Ввод и вывод 
 						|
@@ -218,7 +218,7 @@ block main-content
 						| также предлагаем проводить финансовые операции 
 						br
 						| в криптовалюте.
-				.col
+				.col-lg-6.col-md-12
 					img(src="./images/credit-card.png", alt="credit card", style="width: 525px; height: 501px;")
 			.feedback-block
 				h6.pre-headline Обратная связь

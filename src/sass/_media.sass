@@ -1,4 +1,28 @@
+/**
+	Style Sheet for Verum Trade website project
+	version: 1.0
+	created: 12.11.2018
+	author: Serhii Tiutin
+	website: https://verumtrade.com
+	*/
+
 @import "vars"
+
+@media screen and (max-width: 1900px)
+	.home-page
+		.first-screen-block
+			.fixed-width-wrapper
+				.gradient,
+				.dollar-img-1,
+				.dollar-img-2,
+				.dollar-img-3,
+				.dollar-img-4,
+				.white-circle
+					display: none
+	#nineth
+		animation-delay: 2.5s
+	#tenth, #scrollBottom
+		animation-delay: 3s
 
 @media screen and (max-width: 1500px)
 	.top-footer
@@ -18,6 +42,126 @@
 		.col-sm-5
 			p
 				padding-left: 0
+	.feedback-block
+		position: static
+		p
+			padding-left: 0
+	#scrollBottom
+		margin-left: 0
+		display: none
+	.home-page
+		.first-screen-block
+			.fixed-width-wrapper
+				.container
+					.banner-headline
+						padding-left: 0
+					.banner-text
+						padding-left: 0
+					.custom-btn
+						margin-left: 0
+		.second-block
+			.flex-block
+				margin-left: 0
+				.flex-item
+					padding-top: 50px!important
+		.third-block
+			height: 700px
+			.pre-headline
+				margin-left: 0
+			.page-headline
+				padding-left: 0
+			.flex-block
+				position: static
+				box-shadow: none
+				max-width: 100%
+				padding-bottom: 90px
+		.company-page-hp-top
+			.first-block
+				padding-bottom: 70px
+		.fourth-block
+			padding: 150px 0
+			.page-headline
+				padding-left: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.custom-btn
+				position: static
+		.fifth-block
+			padding: 150px 0
+			.page-headline
+				padding-left: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.investor-block
+				position: static
+		.sixth-block
+			padding-top: 0
+			padding-bottom: 150px
+			height: auto
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.page-headline
+				padding-left: 0
+			.calc-tab-wrapper
+				margin-left: 0
+		.seventh-block
+			padding: 150px 0
+			height: auto
+			.page-headline
+				padding-left: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			.flex-block
+				.flex-item
+					.item-num,
+					.item-title,
+					.item-content,
+					.item-img
+						position: static
+				.flex-item-1
+					.item-num
+						padding-left: 47px
+				.flex-item-2
+					.item-num
+						padding-left: 47px
+				.flex-item-3
+					.item-num
+						padding-left: 47px
+				.flex-item-4
+					.item-num
+						padding-left: 47px
+		.company-page-hp-middle
+			padding-bottom: 0px
+		.company-page-hp-bottom
+			padding-top: 0
+			padding-bottom: 0
+			.third-block
+				height: auto
+				.page-headline
+					padding-left: 0
+		.faq-page
+			.faq-page-wrapper
+				padding-bottom: 70px
+		.eighth-block
+			padding: 150px 0 120px
+			.page-headline
+				padding-left: 0
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+			p
+				padding-left: 0
+		.feedback-block
+			position: static
+			margin-top: 150px
+		.marketing-page
+			.third-block
+				.page-headline
+					padding-left: 0
 	.faq-page
 		padding-bottom: 70px
 		.faq-page-wrapper
@@ -205,6 +349,55 @@
 @media screen and (max-width: 1350px)
 	br
 		display: none!important
+	#scrollBottom
+		margin-left: auto
+		margin-right: auto
+	.home-page
+		.first-screen-block
+			position: static
+			height: auto
+			padding-bottom: 200px
+			.fixed-width-wrapper
+				.container
+					.phone
+						display: none
+					.banner-headline
+						text-align: center
+					.banner-text
+						text-align: center
+					.custom-btn
+						text-align: center
+						margin-left: auto
+						margin-right: auto
+						display: block
+		.second-block
+			padding-top: 30px
+			height: auto
+			.flex-block
+				.flex-item
+					position: static
+		.third-block
+			height: auto
+		.fourth-block
+			.wrapper
+				.right-side
+					right: 90px
+		.company-page-hp-bottom
+			.third-block
+				p
+					padding-left: 0
+					padding-right: 0
+					font-size: 16px
+					line-height: 24px
+				.btn-row
+					padding-left: 0
+				img
+					width: 100%!important
+					max-width: 400px!important
+					height: auto!important
+					margin: 50px auto 0
+		.eighth-block
+			padding: 135px 0 110px
 	.marketing-page
 		.first-block
 			.content-wrapper
@@ -305,14 +498,40 @@
 					br
 						display: none
 
+@media screen and (max-width: 1250px)
+	.home-page
+		.fourth-block
+			.wrapper
+				background: none
+				position: static
+				height: auto
+				.left-side
+					position: static
+					.advantage
+						position: static
+						width: 100%
+						padding-bottom: 15px
+						text-align: center
+						br
+							display: none
+				.right-side
+					position: static
+					.advantage
+						position: static
+						width: 100%
+						padding-bottom: 15px
+						text-align: center
+						br
+							display: none
+
 @media screen and (max-width: 1200px)
 	.header
 		.navbar
 			.main-menu
 				display: none!important
-	.navbar-toggler
-		span
-			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz8+WlpZLS0uFhYX5+fnHx8eqqqpnZ2d3d3ezs7OSkpLU1NStra0ODg7f399xcXHu7u4/Pz8WFhYzMzMkJCQ6Ojq9vb1aWlra2tqjo6N9fX1fX18dHR2EhIRxo4S7AAACW0lEQVR4nO3dCU4DMQyF4TAt032hC6VAy/1viUYFAUKyM00ky57/O8F7AlKSWklKAAAAAAAAAAAAAAAAADAAk+Vs7MdsOelXb/f+4M/7Lr/g0jrsnZaZ/dqTddK7ndqsggfrnAUOORWP1imLHPWCj9YZCz1qBbfWCYttlYYz64DFZnLB1jpfBfJis7COV8FCbDi3jlfBXGy4t45XwV5suLGOV8FGbGidrgqx4bN1ugqexYZn63gVnMWGXvdNv43EhivreBWsxIYBFlN5KU1pah2w2FRpmDzvfzsHrWB6tY5Y6FVtmNbWGYus9YIpvVmnLPCWUzCliXXOu2UfC7c+N1HzrLPEL7uRt0PT06jHkfeXbeOHdvwEAAAAAAAAAAA8a5vpyI9p0+d7p87L2Pq7pN7GLz36NVfruHe5NrkF/Q6zq2PsNxfrnAUuOQWfrFMWedILep/0lqe8U4Rhfe1jw+8q801bbazzVSAX9Dss9EMeG/qwjleB/Gvq75+1/8ZiQ+/TpR15wtQ6XRUD/xnG/zv0/4GvraXxPw8jLDVywQC/ptr/pfH3FvH3hwPY4w/gnMbzapN51jaA89IU/8y7E/17CwAAAAAAAAAA4Ense6Ki3/UV/r42v2NDmXfuhb83Mfzdl/HvL/U+YareQRv/HuHwd0HHv887/p3s8e/Vj/82gnW6KsSG/pdSbTGN/86Mz23TX/JbQd6nvDvypLf/UX11WD/8u2sDeDvP8Rj7TcYwe/g3LAfwDmn8t2ST3z1U7nvAaQBvOneCv8sNAAAAAAAAAAAAAAAAAD59ArTXU0DNDGfMAAAAAElFTkSuQmCC)
+			.hamburger,
+			.hamburger.is-active
+				display: flex
 	table
 		thead
 			tr
@@ -370,6 +589,113 @@
 				padding-bottom: 30px
 		.third-block
 			padding: 90px 0
+	.home-page
+		.third-block
+			padding-bottom: 90px
+			.flex-block
+				display: block
+				.flex-item
+					flex: none
+					position: static
+					padding-left: 0
+					padding-top: 0
+					padding-bottom: 30px
+					.info-img, .zmdi-check
+						position: static
+						display: none
+					.desc-img
+						margin-top: 0!important
+						margin-left: auto
+						margin-right: auto
+						text-align: center
+						display: block
+					.item-title
+						text-align: center
+					.item-content
+						text-align: center
+						font-size: 16px
+					&:last-child
+						padding-bottom: 0
+		.second-block
+			.flex-block
+				.flex-item
+					max-width: 225px
+		.company-page-hp-top
+			padding-bottom: 90px
+		.company-page-hp-middle
+			padding-top: 0
+			.second-block
+				padding: 105px 0 90px
+		.company-page-hp-bottom
+			.third-block
+				padding: 105px 0 90px
+		.fourth-block
+			padding: 105px 0 90px
+		.fifth-block
+			padding: 105px 0 90px
+		.sixth-block
+			padding: 15px 0 90px
+			.calc-tab-wrapper
+				margin-left: auto
+				margin-right: auto
+			.form-wrapper
+				margin: 30px auto 0
+		.seventh-block
+			padding: 105px 0 90px
+			.pre-headline
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				padding: 0 15px
+				text-align: center
+			.flex-block
+				display: block
+				padding: 10px 15px
+				.flex-item
+					flex: none
+					padding-top: 30px
+					.item-num
+						padding: 0 0 15px
+						text-align: center
+					.item-img
+						display: none
+					.item-title
+						padding-bottom: 15px
+						text-align: center
+					.item-content
+						text-align: center
+		.marketing-page
+			padding-top: 90px
+			.first-block
+				.secondary-btn
+					margin-left: 0
+			.third-block
+				padding: 105px 0 60px
+		.faq-page
+			.faq-page-wrapper
+				padding-bottom: 60px
+		.eighth-block
+			padding: 105px 0 90px
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				text-align: center
+			.custom-btn
+				margin: 30px auto 0
+				display: block
+		.feedback-block
+			margin: 90px auto
 
 @media screen and (max-width: 992px)
 	.top-footer
@@ -506,6 +832,70 @@
 			img
 				max-width: 320px!important
 				margin: 0 auto
+	.home-page
+		.first-screen-block
+			.fixed-width-wrapper
+				.container
+					.banner-headline
+						padding-top: 50px
+						font-size: 45px
+		.company-page-hp-top
+			.first-block
+				padding-bottom: 0
+		.second-block
+			.flex-block
+				justify-content: center
+				.flex-item
+					flex: none
+					margin-bottom: 10px
+					margin-left: 5px
+					margin-right: 5px
+		.third-block
+			padding: 70px 0
+		.fourth-block
+			padding: 70px 0
+		.marketing-page
+			.first-block
+				.secondary-btn
+					margin: 15px auto 45px
+					text-align: center
+					display: block
+				.col-md-12
+					order: -1
+			.third-block
+				p
+					padding-right: 0
+		.fifth-block
+			padding: 70px 0
+			.investor-block
+				position: static
+				box-shadow: none
+				max-width: 100%
+				border: none
+				display: block
+				margin-top: 0
+				.table-head
+					display: none
+				.table-body-item
+					padding-top: 15px
+					height: auto
+					border: none
+					display: block
+					.graphic-content, .number-img
+						display: none
+					.investor-type-body
+						padding: 0
+						max-width: 100%
+						display: inline-block
+					.opportunities-type-body
+						padding: 0
+						max-width: 100%
+						display: inline-block
+		.sixth-block
+			display: none
+		.seventh-block
+			height: auto
+			padding: 85px 0 70px
 				
 @media screen and (max-width: 823px)
 	#scroll-top-wrapper
@@ -685,6 +1075,154 @@
 		line-height: 40px!important
 		padding-left: 15px!important
 		padding-right: 15px!important
+	.home-page
+		.first-screen-block
+			position: static
+			height: auto
+			padding-bottom: 80px
+			.fixed-width-wrapper
+				position: static
+				.container
+					.banner-headline
+						font-size: 28px
+						line-height: 40px
+						padding: 35px 15px 30px
+						position: static
+					.banner-text
+						font-size: 18px
+						line-height: 28px
+						padding: 0 15px 30px
+						position: static
+					.custom-btn
+						margin: 0 auto
+						position: static
+		.second-block
+			padding-top: 70px
+			padding-bottom: 40px
+			.flex-block
+				justify-content: center
+				.flex-item
+					flex: none
+					margin-bottom: 10px
+					margin-left: 5px
+					margin-right: 5px
+					max-width: 250px
+					.hidden-content
+						font-size: 16px
+						line-height: 24px
+					
+		.third-block
+			padding: 95px 0 70px
+			.flex-block
+				padding-bottom: 0
+				.flex-item
+					.desc-img
+						margin-left: auto
+						margin-right: auto
+						text-align: center
+						display: block
+					.item-title
+						text-align: center
+					.item-content
+						text-align: center
+						font-size: 16px
+					&:last-child
+						padding-bottom: 0
+		.company-page-hp-top
+			padding-bottom: 0px
+			.first-block
+				padding-bottom: 0px
+		.fourth-block
+			padding: 95px 0 70px
+			.wrapper
+				margin-bottom: 30px
+				.left-side, .right-side
+					.advantage
+						font-family: $regular-font
+						font-size: 16px
+						line-height: 24px
+						text-align: center
+						padding: 0 5px 10px
+			.custom-btn
+				position: static
+		.fifth-block
+			padding-top: 95px
+			padding-bottom: 55px
+			.investor-block
+				.table-body-item
+					padding-top: 0
+					.investor-type-body
+						padding-bottom: 10px
+						text-align: center
+					.opportunities-type-body
+						font-size: 16px
+						line-height: 24px
+						padding-bottom: 15px
+						text-align: center
+						span
+							padding-top: 5px
+		.marketing-page
+			padding: 70px 0
+			.first-block
+				.content-wrapper
+					.custom-btn
+						margin-bottom: 30px
+					.secondary-btn
+						display: block
+						margin: 0 auto 50px
+			.third-block
+				padding-top: 95px
+				padding-bottom: 0
+		.company-page-hp-middle
+			padding-top: 0
+			.second-block
+				padding-top: 95px
+				padding-bottom: 70px
+		.company-page-hp-bottom
+			padding-top: 0
+			.third-block
+				padding-top: 95px
+				padding-bottom: 70px
+		.seventh-block
+			padding-top: 95px
+			.page-headline
+				text-align: center
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			p
+				font-size: 16px
+				line-height: 24px
+			.default-tooltip
+				.tooltip-wave
+					bottom: -10px
+			.flex-block
+				.flex-item
+					.item-content
+						font-size: 16px
+						line-height: 24px
+		.eighth-block
+			padding: 95px 0 70px
+			.pre-headline
+				text-align: center
+				&:before
+					left: 50%
+					transform: translateX(-50%)
+			.page-headline
+				text-align: center
+			p
+				text-align: center
+			.custom-btn
+				margin: 30px auto 0
+				display: block
+		.faq-page
+			.faq-page-wrapper
+				padding-bottom: 55px
+		.feedback-block
+			margin-top: 70px
+			margin-bottom: 70px
 
 @media screen and (max-width: 767px)
 	.company-page

@@ -7,10 +7,13 @@
 	*/
 
 @import "vars"
-@import "snippets"
+@import "buttons"
 @import "feedback-modal"
 @import "investor-modal"
-@import "progress"
+
+/**
+	Basic normalize
+	*/
 
 @media (min-width: 1220px)
 	.container
@@ -27,10 +30,14 @@ ul, ol, dl
 .ta-c
 	text-align: center!important
 
+/**
+	Headline typography styles
+	*/
+
 .pre-headline
 	font-size: 16px
 	font-family: $regular-font
-	color: #696969
+	color: $dim-gray-color
 	line-height: 1.2
 	position: relative
 	text-align: center
@@ -45,14 +52,17 @@ ul, ol, dl
 		left: 50%
 		transform: translateX(-50%)
 
-
 .page-headline
 	font-size: 50px
 	font-family: $bold-font
-	color: #202020
+	color: $light-black-color
 	line-height: 1.2
 	text-align: left
 	padding: 23px 0 40px
+
+/**
+	Basic table styles
+	*/
 
 table
 	width: 100%
@@ -71,22 +81,22 @@ table
 				border-top-left-radius: 3px
 				border-top-right-radius: 3px
 		&.blue-thead
-			background-image: -moz-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
-			background-image: -webkit-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
-			background-image: -ms-linear-gradient(90deg, #3469f5 0%, #4c85f4 100%)
+			background-image: -moz-linear-gradient(90deg, $accent-blue-color 0%, $lighter-blue-color 100%)
+			background-image: -webkit-linear-gradient(90deg, $accent-blue-color 0%, $lighter-blue-color 100%)
+			background-image: -ms-linear-gradient(90deg, $accent-blue-color 0%, $lighter-blue-color 100%)
 		&.green-thead
-			background-image: -moz-linear-gradient(90deg, #3da580 0%, #47c095 100%)
-			background-image: -webkit-linear-gradient(90deg, #3da580 0%, #47c095 100%)
-			background-image: -ms-linear-gradient(90deg, #3da580 0%, #47c095 100%)
+			background-image: -moz-linear-gradient(90deg, $accent-green-color 0%, $lighter-green-color 100%)
+			background-image: -webkit-linear-gradient(90deg, $accent-green-color 0%, $lighter-green-color 100%)
+			background-image: -ms-linear-gradient(90deg, $accent-green-color 0%, $lighter-green-color 100%)
 	tbody
-		border: 1px solid rgb(240, 240, 240)
+		border: 1px solid $honey-dew-color
 		text-align: center
 		font-size: 18px
 		font-family: $regular-font
 		tr
 			td
 				line-height: 62px
-				border-bottom: 1px solid rgb(240, 240, 240)
+				border-bottom: 1px solid $honey-dew-color
 				span
 					position: relative
 			&:last-child
@@ -94,7 +104,9 @@ table
 					border-bottom: none
 
 
-/* Feedback block */
+/**
+	Feedback block styles
+	*/
 
 .feedback-block
 	width: 100%
@@ -118,6 +130,9 @@ table
 		font-size: 18px
 		padding-left: 9px
 
+/**
+	Tooltip styles
+	*/
 
 .default-tooltip
 	display: inline-block
@@ -141,14 +156,19 @@ table
 			background: url(../images/dotted-line.png) repeat-x center center
 			background-size: 50% auto
 
-
-
+/**
+	Home page first screen keyframe
+	*/
 
 @keyframes fadeIn
 	from
 		opacity: 0
 	to
 		opacity: 1
+
+/**
+	Scroll to top from footer keyframe
+	*/
 
 @keyframes toTop
 	from
@@ -158,6 +178,9 @@ table
 		opacity: 1
 		top: 30px
 
+/**
+	Scroll to home page second screen from its first screen
+	*/
 
 @keyframes toBottom
 	from
@@ -167,46 +190,50 @@ table
 		opacity: 1
 		top: 0px
 
+/**
+	Home page first screen animation delay styles 
+	*/
+
 #first
 	animation-delay: 1s
 
 #second
-	animation-delay: 2s
+	animation-delay: 1.5s
 
 #third
-	animation-delay: 3s
+	animation-delay: 2s
 
 #fourth
-	animation-delay: 5s
+	animation-delay: 2.5s
 
 #fifth
-	animation-delay: 7s
+	animation-delay: 3s
 	top: 271px
 	left: 98px
 
 #sixth
-	animation-delay: 8s
+	animation-delay: 3.5s
 	top: 170px
 	left: 281px
 
 #seventh
-	animation-delay: 9s
+	animation-delay: 4s
 	top: 94px
 	left: 456px
 
 #eighth
-	animation-delay: 10s
+	animation-delay: 4.5s
 	top: -33px
 	left: 560px
 
 #nineth
-	animation-delay: 11s
+	animation-delay: 5s
 
 #tenth
-	animation-delay: 12s
+	animation-delay: 5.5s
 
 #scrollBottom
-	animation-delay: 12s
+	animation-delay: 5.5s
 	position: relative
 	z-index: 99999
 	width: 42px
@@ -227,6 +254,9 @@ table
 	opacity: 0
 	animation: toBottom 2s forwards
 
+/**
+	Hidden input / textarea placeholders on focus
+	*/
 
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder,
@@ -260,6 +290,10 @@ textarea::focus
 	label
 		display: none
 
+/**
+	Home page dollar images styles
+	*/
+
 .white-circle
 	background-color: $white-color
 	width: 15px
@@ -274,15 +308,94 @@ textarea::focus
 	position: relative
 	z-index: 888
 	display: inline-block
+
 .dollar-img-1
 	top: 249px!important
 	left: -7px!important
+
 .dollar-img-2
 	top: 150px!important
 	left: 120px!important
+
 .dollar-img-3
 	top: 73px!important
 	left: 237px!important
+
 .dollar-img-4
 	top: -53px!important
 	left: 285px!important
+
+/**
+	Calculator input range styles
+	*/
+
+input[type=range]
+	height: 16px
+	-webkit-appearance: none
+	margin: 10px 0
+	width: 100%
+	&:focus
+		outline: none
+	&::-webkit-slider-runnable-track
+		width: 100%
+		height: 4px
+		cursor: pointer
+		animate: 0.2s
+		box-shadow: 0px 0px 0px $black-color
+		background: $accent-blue-color
+		border-radius: 25px
+		border: 1px solid $accent-blue-color
+	&::-webkit-slider-thumb
+		box-shadow: 1px 1px 1px $accent-blue-color
+		border: 1px solid $accent-blue-color
+		height: 20px
+		width: 22px
+		border-radius: 3px
+		background: $accent-blue-color
+		cursor: pointer
+		-webkit-appearance: none
+		margin-top: -10px
+	&:focus::-webkit-slider-runnable-track
+		background: $accent-blue-color
+	&::-moz-range-track
+		width: 100%
+		height: 4px
+		cursor: pointer
+		animate: 0.2s
+		box-shadow: 0px 0px 0px $black-color
+		background: $accent-blue-color
+		border-radius: 25px
+		border: 1px solid $accent-blue-color
+	&::-moz-range-thumb
+		box-shadow: 1px 1px 1px $accent-blue-color
+		border: 1px solid $accent-blue-color
+		height: 20px
+		width: 22px
+		border-radius: 4px
+		background: $accent-blue-color
+		cursor: pointer
+	&::-ms-track
+		width: 100%
+		height: 4px
+		cursor: pointer
+		animate: 0.2s
+		background: $accent-blue-color
+		border-color: transparent
+		color: $accent-blue-color
+	&::-ms-fill-lower, &::-ms-fill-upper
+		background: $accent-blue-color
+		border: 1px solid $accent-blue-color
+		border-radius: 50px
+		box-shadow: 0px 0px 0px $black-color
+	&::-ms-thumb
+		margin-top: 1px
+		box-shadow: 1px 1px 1px $accent-blue-color
+		border: 1px solid $accent-blue-color
+		height: 40px
+		width: 35px
+		border-radius: 6px
+		background: $accent-blue-color
+		cursor: pointer
+	&:focus
+		&::-ms-fill-lower, &::-ms-fill-upper
+			background: $accent-blue-color

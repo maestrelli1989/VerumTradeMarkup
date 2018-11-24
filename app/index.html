@@ -9,13 +9,14 @@
 		<link rel="canonical" href="http://verumtrade.com"/>
 		<link rel="shortcut icon" href="./images/favicons/favicon_verum.ico">
 		<link rel="icon" type="image/png" href="./images/favicons/favicon_verum.png" sizes="16x16">
+		<link rel="stylesheet" href="css/hamburgers.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 	</head>
 	<body>
 		<header class="header home-page-header">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg toBottomAnimated" id="tenth"><a class="brand" href="/"><img class="d-inline-block align-top" src="./images/home-page-logo.png" alt="logo" style="width: 40px; height: 40px;"><span>VerumTrade</span></a>
+				<nav class="navbar navbar-expand-xl toBottomAnimated" id="tenth"><a class="brand" href="/"><img class="d-inline-block align-top" src="./images/home-page-logo.png" alt="logo" style="width: 40px; height: 40px;"><span>VerumTrade</span></a>
 					<div class="collapse navbar-collapse main-menu" id="navbarNavDropdown">
 						<ul class="navbar-nav">
 							<li class="nav-item default-nav-item active"><a class="nav-link" href="/">Главная</a></li>
@@ -28,6 +29,7 @@
 							<li class="nav-item special-nav-item"><a class="nav-link" href="https://backoffice.verumtrade.com/sign_in"><i class="zmdi zmdi-lock"></i><span>Войти</span></a><a class="nav-link" href="https://backoffice.verumtrade.com/sign_up"><i class="zmdi zmdi-account-add"></i><span>Регистрация</span></a></li>
 						</ul>
 					</div>
+					<button class="hamburger hamburger--spin" id="hamburger" type="button" onclick="openMobileMenu()"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
 				</nav>
 			</div>
 		</header>
@@ -35,7 +37,7 @@
 			<div class="first-screen-block">
 				<div class="fixed-width-wrapper">
 					<div class="container">
-						<h1 class="banner-headline toTopAnimated" id="first">Зарабатывайте до 25% в месяц<br>с ежедневными выплатами <br>на Visa/Mastercard</h1>
+						<h1 class="banner-headline toTopAnimated" id="first">Зарабатывайте до 25% в месяц <br>с ежедневными выплатами <br>на Visa/Mastercard</h1>
 						<p class="banner-text toTopAnimated" id="second">С командой ТОП-1 криптоаналитика по версии TradingView</p><a class="custom-btn toTopAnimated" href="javascript:void(0);" id="third"><span>Подробнее</span>
 							<svg id="button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve">
 								<g>
@@ -78,7 +80,7 @@
 								</g>
 							</svg>
 							<div class="item-title">ТОП-1 аналитик</div>
-							<div class="item-subtitle">на Trandingview</div>
+							<div class="item-subtitle">на TradingView</div>
 							<div class="hidden-content">Lorem ipsum dolor sit amet</div>
 						</div>
 						<div class="flex-item flex-item-2">
@@ -185,7 +187,7 @@
 				<div class="first-block">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-lg-6 col-md-12">
 								<h6 class="pre-headline">О компании</h6>
 								<h2 class="page-headline">
 									Международная <br>инвестиционная <br>компания VerumTrade</h2>
@@ -202,7 +204,7 @@
 										</svg></a>
 								</div>
 							</div>
-							<div class="col-sm-6"><a class="pulse" href="javascript:void(0);">
+							<div class="col-lg-6 col-md-12"><a class="pulse" href="javascript:void(0);">
 									<!-- ?xml version="1.0" encoding="UTF-8" standalone="no"?-->
 									<svg id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 480 480" height="480" width="480">
 										<metadata id="metadata10">
@@ -224,26 +226,26 @@
 			<div class="third-block">
 				<div class="container">
 					<h6 class="pre-headline ta-c">Сделайте правильный выбор</h6>
-					<h1 class="page-headline ta-c">Какие риски несут популярные<br>способы инвестирования</h1>
+					<h1 class="page-headline ta-c">Какие риски несут популярные <br>способы инвестирования</h1>
 					<div class="flex-block">
 						<div class="flex-item flex-item-1">
 							<div class="info-img"><img src="./images/light-red-segment.png" alt=""><i class="zmdi zmdi-close"></i></div><img class="desc-img" src="./images/investment-1.png" alt="">
-							<div class="item-title">Инвестировать<br>самостоятельно</div>
+							<div class="item-title">Инвестировать <br>самостоятельно</div>
 							<div class="item-content">Высокие риски, <br>потеря времени <br>и необходимость <br>экспертности</div>
 						</div>
 						<div class="flex-item flex-item-2">
 							<div class="info-img"><img src="./images/light-red-segment.png" alt=""><i class="zmdi zmdi-close"></i></div><img class="desc-img" src="./images/investment-2.png" alt="">
-							<div class="item-title">Традиционный<br>банк</div>
+							<div class="item-title">Традиционный <br>банк</div>
 							<div class="item-content">Низкий процент <br>и лишние вопросы <br>по поводу <br>происхождения <br>капитала</div>
 						</div>
 						<div class="flex-item flex-item-3">
 							<div class="info-img"><img src="./images/light-red-segment.png" alt=""><i class="zmdi zmdi-close"></i></div><img class="desc-img" src="./images/investment-3.png" alt="">
-							<div class="item-title">Обычные<br>трейдеры</div>
+							<div class="item-title">Обычные <br>трейдеры</div>
 							<div class="item-content">Высокие риски, <br>отсутствие гарантий <br>и проблема <br>с обналичиванием <br>дохода</div>
 						</div>
 						<div class="flex-item flex-item-4">
 							<div class="info-img"><img src="./images/light-green-segment.png" alt=""><i class="zmdi zmdi-check"></i></div><img class="desc-img" src="./images/investment-4.png" alt="">
-							<div class="item-title">Компания<br>VerumTrade</div>
+							<div class="item-title">Компания <br>VerumTrade</div>
 							<div class="item-content">Аналитики с мировым <br>именем, страхование <br>инвестиций. Ввод и <br>вывод средств через <br>visa / mastercard / <br>криптовалюты</div>
 						</div>
 					</div>
@@ -275,7 +277,7 @@
 			<div class="fifth-block">
 				<div class="container">
 					<h6 class="pre-headline ta-c">Целевая аудитория</h6>
-					<h1 class="page-headline ta-c">Кто является нашими<br>инвесторами</h1>
+					<h1 class="page-headline ta-c">Кто является нашими <br>инвесторами</h1>
 					<div class="investor-block">
 						<div class="table-head">
 							<div class="investor-type-head">Кто</div>
@@ -306,16 +308,108 @@
 				<div class="container">
 					<h6 class="pre-headline ta-c">Калькулятор дохода</h6>
 					<h1 class="page-headline ta-c">Сколько можно зарабатывать <br>с VerumTrade</h1>
+					<div class="row">
+						<div class="col-xl-8 col-lg-12">
+							<div class="calc-tab-wrapper">
+								<div class="header-block">
+									<ul class="nav nav-tabs">
+										<li class="nav-item"><a class="nav-link active" href="#monthly-amount" data-toggle="tab">Ежемесячная выплата</a></li>
+										<li class="nav-item"><a class="nav-link" href="#daily-amount" data-toggle="tab">Ежедневная выплата</a></li>
+									</ul>
+								</div>
+								<div class="tab-content">
+									<div class="tab-pane container active" id="monthly-amount">
+										<div class="monthly-calc-wrapper">
+											<form class="calculator monthly-calculator">
+												<div class="monthly-calculator-row">
+													<label for="monthly-calculator-amount-val">Какую сумму вы хотите инвестировать</label>
+													<input class="monthly-calculator-amount-val" id="monthly-calculator-amount-val" type="text" value="" placeholder="0" onchange="document.getElementById(&quot;monthly-calculator-range&quot;).value=this.value" onkeypress="return event.keyCode != 13;">
+												</div>
+												<div class="monthly-calculator-row">
+													<input class="monthly-calculator-range" id="monthly-calculator-range" type="range" min="0" max="50000" value="0" step="1" required="" onchange="document.getElementById(&quot;monthly-calculator-amount-val&quot;).value=this.value">
+												</div>
+												<div class="monthly-calculator-row"><span class="nums">0</span><span class="nums">10 000</span><span class="nums">20 000</span><span class="nums">30 000</span><span class="nums">40 000</span><span class="nums">50 000</span></div>
+												<div class="monthly-calculator-row">
+													<div class="monthly-calculator-forecast-month-wrapper"><span class="monthly-calculator-forecast-month">12%</span></div>
+													<div class="monthly-calculator-info">Прогнозированный процент в месяц<span> *</span></div>
+													<div class="monthly-calculator-forecast-year-wrapper"><span class="calculator-forecast-year">125%</span></div>
+													<div class="monthly-calculator-info">Прогнозированный процент за год<span> *</span></div>
+												</div>
+												<div class="monthly-calculator-row">
+													<div class="monthly-calculator-result-month-wrapper"><span class="monthly-calculator-result-month"></span></div>
+													<div class="monthly-calculator-info">Прогнозированный заработок в месяц<span> *</span></div>
+													<div class="monthly-calculator-result-year-wrapper"><span class="monthly-calculator-result-year"></span></div>
+													<div class="monthly-calculator-info">Прогнозированный заработок за год<span> *</span></div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-pane container fade" id="daily-amount">
+										<div class="daily-calc-wrapper">
+											<form class="calculator daily-calculator">
+												<div class="daily-calculator-row">
+													<label for="daily-calculator-amount-val">Какую сумму вы хотите инвестировать</label>
+													<input class="daily-calculator-amount-val" id="daily-calculator-amount-val" type="text" value="" placeholder="0" onchange="document.getElementById(&quot;daily-calculator-range&quot;).value=this.value" onkeypress="return event.keyCode != 13;">
+												</div>
+												<div class="daily-calculator-row">
+													<input class="daily-calculator-range" id="daily-calculator-range" type="range" min="0" max="50000" value="0" step="1" required="" onchange="document.getElementById(&quot;daily-calculator-amount-val&quot;).value=this.value">
+												</div>
+												<div class="daily-calculator-row">
+													<div class="daily-calculator-forecast-day-wrapper"><span class="daily-calculator-forecast-day">12%</span></div>
+													<div class="daily-calculator-info">Прогнозированный процент в день<span> *</span></div>
+													<div class="daily-calculator-forecast-month-wrapper"><span class="daily-calculator-forecast-month">125%</span></div>
+													<div class="daily-calculator-info">Прогнозированный процент в месяц<span> *</span></div>
+												</div>
+												<div class="daily-calculator-row">
+													<div class="daily-calculator-result-day-wrapper"><span class="daily-calculator-result-day"></span></div>
+													<div class="daily-calculator-info">Прогнозированный заработок в день<span> *</span></div>
+													<div class="daily-calculator-result-month-wrapper"><span class="daily-calculator-result-month"></span></div>
+													<div class="daily-calculator-info">Прогнозированный заработок в месяц<span> *</span></div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="footer-block">
+									<p>Процентная ставка может варьироваться от 15% до 25% в месяц</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-12">
+							<div class="form-wrapper">
+								<form class="form">
+									<h3>Станьте успешным инвестором VerumTrade</h3>
+									<p>Оставьте заявку в форме ниже <br>и получите доступ на почту</p>
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Введите ваше имя" required>
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" placeholder="Введите ваш email" required>
+									</div>
+									<div class="form-group">
+										<input type="text" name="phone" placeholder="Введите ваш телефон">
+									</div>
+									<button class="custom-btn" type="submit" role="button"><span>Стать инвестором</span>
+										<svg id="submit" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+											<g>
+												<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline>
+											</g>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="seventh-block">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-7">
+						<div class="col-xl-7 col-lg-12">
 							<h6 class="pre-headline">Грамотный финансовый менеджмент</h6>
 							<h1 class="page-headline">Распределение денежных <br>средств компании</h1>
 						</div>
-						<div class="col-sm-5">
+						<div class="col-xl-5 col-lg-12">
 							<p>В качестве диверсификации рисков, <br>денежные средства компании распределяются <br>на 4 основных  направления</p>
 						</div>
 					</div>
@@ -323,21 +417,25 @@
 						<div class="flex-block">
 							<div class="flex-item flex-item-1">
 								<div class="item-num">50%</div>
+								<div class="item-img"><img src="./images/item-1.png" alt=""></div>
 								<div class="item-title">Краткосрочный и <br>долгосрочный трейдинг</div>
-								<div class="item-content">Управление профессиональной <br>командой трейдеров во главе с <br><a class="default-tooltip" href="javascript:void(0);" id="default-tooltip">EXCAVO <span class="tooltip-wave"><span> </span></span></a>- ТОП-1 криптоаналитик <br>в мире по версии TradingView.</div>
+								<div class="item-content">Управление профессиональной <br>командой трейдеров во главе с <br><a class="default-tooltip" href="javascript:void(0);" id="default-tooltip">EXCAVO <span class="tooltip-wave"><span> </span></span></a> - ТОП-1 криптоаналитик <br>в мире по версии TradingView.</div>
 							</div>
 							<div class="flex-item flex-item-2">
 								<div class="item-num">20%</div>
+								<div class="item-img"><img src="./images/item-2.png" alt=""></div>
 								<div class="item-title">Увеличение мощности <br>майнинг оборудования</div>
 								<div class="item-content">Майнинг позволяет <br>диверсифицировать риски <br>и обеспечивает стабильный <br>доход компании.</div>
 							</div>
 							<div class="flex-item flex-item-3">
 								<div class="item-num">20%</div>
-								<div class="item-title">Кредитование под <br>залог валюты</div>
-								<div class="item-content">Кредитование под залог <br>криптовалюты или других <br>активов под 1-1,5% в день.</div>
+								<div class="item-img"><img src="./images/item-2.png" alt=""></div>
+								<div class="item-title">Кредитирование под <br>залог криптовалюты</div>
+								<div class="item-content">Кредитирование под залог <br>криптовалюты или других <br>активов под 1-1,5% в день.</div>
 							</div>
 							<div class="flex-item flex-item-4">
 								<div class="item-num">10%</div>
+								<div class="item-img"><img src="./images/item-3.png" alt=""></div>
 								<div class="item-title">Резерв для <br>перспективных <br>направлений</div>
 								<div class="item-content">VerumTrade имеет резерв <br>денежных средств для <br>перспективных ICO проектов <br>и реализации собственных <br>новых продуктов.</div>
 							</div>
@@ -348,7 +446,7 @@
 			<div class="marketing-page">
 				<div class="container">
 					<div class="row first-block">
-						<div class="col-sm-3">
+						<div class="col-lg-3 col-md-6 referral-table-wrap">
 							<table class="referral-table">
 								<thead class="blue-thead">
 									<tr>
@@ -383,7 +481,7 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-lg-3 col-md-6 percent-table-wrap">
 							<table class="percent-table">
 								<thead class="green-thead">
 									<tr>
@@ -418,7 +516,7 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-lg-6 col-md-12">
 							<div class="content-wrapper">
 								<h6 class="pre-headline">Комиссионные компании</h6>
 								<h2 class="page-headline">
@@ -439,14 +537,14 @@
 						</div>
 					</div>
 					<div class="row third-block">
-						<div class="col">
+						<div class="col-lg-6 col-md-12">
 							<h6 class="pre-headline">Вывод денег</h6>
 							<h2 class="page-headline">
 								Ввод и вывод <br>денег через системы <br>Visa/Mastercard</h2>
 							<p>Наличие Visa/Mastercard в качестве систем оплаты <br>и вывода средств еще раз доказывает, что компания <br>ведет легальную деятельность и нацелена <br>на долгосрочное развитие.</p>
 							<p>Помимо традиционных и удобных для большинства <br>клиентов ввода и вывода денежных средств, мы <br>также предлагаем проводить финансовые операции <br>в криптовалюте.</p>
 						</div>
-						<div class="col"><img src="./images/credit-card.png" alt="credit card" style="width: 525px; height: 501px;"></div>
+						<div class="col-lg-6 col-md-12"><img src="./images/credit-card.png" alt="credit card" style="width: 525px; height: 501px;"></div>
 					</div>
 				</div>
 			</div>
@@ -454,12 +552,12 @@
 				<div class="second-block">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-9">
+							<div class="col-xl-9 col-lg-12">
 								<h6 class="pre-headline">Как развивалась компания на протяжении 3-х лет</h6>
 								<h2 class="page-headline">
 									Три года стабильной работы и более <br>1 млн. выплаченных дивидендов</h2>
 							</div>
-							<div class="col-sm-3"><a class="custom-btn" href="javascript:void(0);"><span>Подробнее</span>
+							<div class="col-xl-3 col-lg-12 d-none d-xl-block"><a class="custom-btn" href="javascript:void(0);"><span>Подробнее</span>
 									<svg id="button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve">
 										<g>
 											<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline>
@@ -470,18 +568,22 @@
 						<div class="timeline-block"><img src="./images/timeline.png" alt="timeline">
 							<div class="timeline-description-block">
 								<div class="item item-1">
+									<h2 class="num">2015</h2>
 									<h3 class="title">Первые трейдеры</h3>
 									<p class="content">Весной 2015 года в компании появились первые трейдеры, которые занимались <br>продажей криптовалют.</p>
 								</div>
 								<div class="item item-2">
+									<h2 class="num">2016</h2>
 									<h3 class="title">Cоздание криптовалюты</h3>
 									<p class="content">Компания анонсировала создание собственной криптовалюты VerumCoin</p>
 								</div>
 								<div class="item item-3">
+									<h2 class="num">2017</h2>
 									<h3 class="title">Первые транзакции</h3>
 									<p class="content">Первые транзакции монетами VerumCoin с собственным блокчейном</p>
 								</div>
 								<div class="item item-4">
+									<h2 class="num">2018</h2>
 									<h3 class="title">Создание новых отделов</h3>
 									<p class="content">Создание нового аналитического отдела который занимается изучением новых выгодных <br>ICO проектов</p>
 								</div>
@@ -663,12 +765,12 @@
 			<div class="eighth-block">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-9">
+						<div class="col-xl-9 col-lg-12">
 							<h6 class="pre-headline">Стань инвестором</h6>
 							<h1 class="page-headline">Начни ежедневно <br>зарабатывать с VerumTrade</h1>
 							<p>3 года успешной работы и тысячи довольных инвесторов</p>
 						</div>
-						<div class="col-sm-3"><a class="custom-btn" href="javascript:void(0);" id="investorModalTrigger3"><span>Стать инвестором</span>
+						<div class="col-xl-3 col-lg-12"><a class="custom-btn" href="javascript:void(0);" id="investorModalTrigger3"><span>Стать инвестором</span>
 								<svg id="button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve">
 									<g>
 										<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7"></polyline>
@@ -759,19 +861,22 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h3 class="modal-title">Остались вопросы?</h3>
-					<p>Оставьте свой вопрос в форме ниже и наш менеджер ответит вам<br>в ближайшее время</p><span class="close" id="closefeedbackModal">&times;</span>
+					<p>Оставьте свой вопрос в форме ниже и наш менеджер ответит вам <br>в ближайшее время</p><span class="close" id="closefeedbackModal">&times;</span>
 				</div>
 				<div class="modal-body">
 					<form class="form">
 						<div class="row">
 							<div class="col">
-								<div class="form-row">
+								<div class="form-row default-row">
 									<input class="textbox" type="text" name="name" placeholder="Введите ваше имя" required>
 								</div>
-								<div class="form-row">
+								<div class="form-row default-row">
 									<input class="textbox" type="email" name="email" placeholder="Введите ваш email" required>
 								</div>
-								<div class="form-row">
+								<div class="form-row floating-row">
+									<textarea class="textbox" name="answer" placeholder="Введите ваш вопрос"></textarea>
+								</div>
+								<div class="form-row default-row">
 									<button class="custom-btn" type="submit" role="button"><span>Задать вопрос</span>
 										<svg id="submit" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve">
 											<g>
@@ -779,11 +884,6 @@
 											</g>
 										</svg>
 									</button>
-								</div>
-							</div>
-							<div class="col">
-								<div class="form-row">
-									<textarea class="textbox" name="answer" placeholder="Введите ваш вопрос"></textarea>
 								</div>
 							</div>
 						</div>
@@ -820,6 +920,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="mobile-menu" id="mobile-menu">
+			<button class="hamburger hamburger--spin closebtn is-active" type="button" onclick="closeMobileMenu()"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+			<div class="overlay-content"><a href="javascript:void(0);">Главная</a><a href="javascript:void(0);">О компании</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Инфоцентр</a><a href="javascript:void(0);">Контакты</a><a href="javascript:void(0);">Войти</a><a href="javascript:void(0);">Регистрация</a></div>
 		</div>
 		<link rel="stylesheet" href="css/main.min.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

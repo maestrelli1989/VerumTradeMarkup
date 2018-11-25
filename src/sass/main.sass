@@ -87,6 +87,19 @@
 						span
 							padding-left: 6.5px
 							display: inline-block
+				.lang-item
+					position: relative
+					right: 110px
+					.dropdown-menu
+						padding: 0
+						min-width: 45px
+						border: none
+						background: transparent
+						.dropdown-item
+							padding: 4px 0
+							&:hover
+								background: transparent
+								color: #366bf5
 				.dropdown-menu
 					border: 1px solid $honey-dew-color
 					.dropdown-item
@@ -224,6 +237,12 @@
 	.col-sm-5
 		p
 			padding-left: 18px
+	.footer-lang-switcher
+		display: none
+		a
+			font-size: 16px
+			line-height: 20px
+			padding: 0 15px 15px
 
 /**
 	Contacts page styles
@@ -1160,6 +1179,23 @@
 						color: $white-color
 						&:hover
 							color: $accent-blue-color
+				.lang-item
+					position: relative
+					right: 110px
+					.dropdown-menu
+						padding: 0
+						min-width: 45px
+						border: none
+						background: transparent
+						color: $white-color
+						.dropdown-item
+							padding: 4px 0
+							color: $white-color
+							&:hover
+								background: transparent
+								color: #366bf5
+							&:active
+								background: transparent
 	.hamburger,
 	.hamburger.is-active
 		display: none

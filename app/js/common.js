@@ -56,29 +56,80 @@ $(document).ready( function () {
 	var amountVal = calculator.find('.monthly-calculator-amount-val');
 
 	$(window).on('DOMContentLoaded', function () {
-		amountVal.val( calculatorRange.val() );
-		resultMonth = calculatorRange.val() * 0.12;
+		amountVal.val(calculatorRange.val());
+		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
+			resultMonth = calculatorRange.val() * 0.16;
+		}
+		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
+			resultMonth = calculatorRange.val() * 0.17;
+		}
+		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
+			resultMonth = calculatorRange.val() * 0.18;
+		}
+		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
+			resultMonth = calculatorRange.val() * 0.19;
+		}
+		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
+			resultMonth = calculatorRange.val() * 0.20;
+		}
+		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
+			resultMonth = calculatorRange.val() * 0.21;
+		}
 		resultYear = calculatorRange.val() * 1.25;
-		calculatorResultMonth.text( resultMonth.toFixed(0) + ' $' );
-		calculatorResultYear.text( resultYear.toFixed(0) + ' $' );
+		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');
+		calculatorResultYear.text(resultYear.toFixed(0) + ' $');
 	});
 	
-	calculatorRange.on('change', function () {
-		amountVal.val( calculatorRange.val() );
-		calculatorRange.val( amountVal.val() );
-		resultMonth = calculatorRange.val() * 0.12;
+	calculatorRange.on('change', function() {
+		amountVal.val(calculatorRange.val());
+		calculatorRange.val(amountVal.val());
+		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
+			resultMonth = calculatorRange.val() * 0.16;
+		}
+		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
+			resultMonth = calculatorRange.val() * 0.17;
+		}
+		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
+			resultMonth = calculatorRange.val() * 0.18;
+		}
+		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
+			resultMonth = calculatorRange.val() * 0.19;
+		}
+		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
+			resultMonth = calculatorRange.val() * 0.20;
+		}
+		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
+			resultMonth = calculatorRange.val() * 0.21;
+		}
 		resultYear = calculatorRange.val() * 1.25;
-		calculatorResultMonth.text( resultMonth.toFixed(0) + ' $' );
-		calculatorResultYear.text( resultYear.toFixed(0) + ' $' );
+		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');
+		calculatorResultYear.text(resultYear.toFixed(0) + ' $');
 	});
 	
 	amountVal.on('change', function () {
-		amountVal.val( calculatorRange.val() );
-		calculatorRange.val( amountVal.val() );
-		resultMonth = calculatorRange.val() * 0.12;
+		amountVal.val(calculatorRange.val());
+		calculatorRange.val(amountVal.val());
+		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
+			resultMonth = calculatorRange.val() * 0.16;
+		}
+		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
+			resultMonth = calculatorRange.val() * 0.17;
+		}
+		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
+			resultMonth = calculatorRange.val() * 0.18;
+		}
+		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
+			resultMonth = calculatorRange.val() * 0.19;
+		}
+		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
+			resultMonth = calculatorRange.val() * 0.20;
+		}
+		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
+			resultMonth = calculatorRange.val() * 0.21;
+		}
 		resultYear = calculatorRange.val() * 1.25;
-		calculatorResultMonth.text( resultMonth.toFixed(0) + ' $' );
-		calculatorResultYear.text( resultYear.toFixed(0) + ' $' );
+		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');
+		calculatorResultYear.text(resultYear.toFixed(0) + ' $');
 	});
 
 });
@@ -96,8 +147,8 @@ $(document).ready( function () {
 
 	$(window).on('DOMContentLoaded', function() {
 		dailyCalculatorAmountVal.val(dailyCalculatorRange.val());
-		resultDayD = (dailyCalculatorRange.val() * 0.12) / 31.5;
-		resultMonthD = dailyCalculatorRange.val() * 0.12;
+		resultDayD = (dailyCalculatorRange.val() * 0.08) / 31.5;
+		resultMonthD = dailyCalculatorRange.val() * 0.16;
 		dailyCalculatorResultDay.text(resultDayD.toFixed(2) + ' $');
 		dailyCalculatorResultMonth.text(resultMonthD.toFixed(0) + ' $');
 	});
@@ -105,8 +156,8 @@ $(document).ready( function () {
 	dailyCalculatorRange.on('change', function() {
 		dailyCalculatorAmountVal.val(dailyCalculatorRange.val());
 		dailyCalculatorRange.val(dailyCalculatorAmountVal.val());
-		resultDayD = (dailyCalculatorRange.val() * 0.12) / 31.5;
-		resultMonthD = dailyCalculatorRange.val() * 0.12;
+		resultDayD = (dailyCalculatorRange.val() * 0.08) / 31.5;
+		resultMonthD = dailyCalculatorRange.val() * 0.16;
 		dailyCalculatorResultDay.text(resultDayD.toFixed(2)  + ' $');
 		dailyCalculatorResultMonth.text(resultMonthD.toFixed(0) + ' $');
 	});
@@ -114,8 +165,8 @@ $(document).ready( function () {
 	dailyCalculatorAmountVal.on('change', function() {
 		dailyCalculatorAmountVal.val(dailyCalculatorRange.val());
 		dailyCalculatorRange.val(dailyCalculatorAmountVal.val());
-		resultDayD = (dailyCalculatorRange.val() * 0.12) / 31.5;
-		resultMonthD = dailyCalculatorRange.val() * 0.12;
+		resultDayD = (dailyCalculatorRange.val() * 0.08) / 31.5;
+		resultMonthD = dailyCalculatorRange.val() * 0.16;
 		dailyCalculatorResultDay.text(resultDayD.toFixed(2) + ' $');
 		dailyCalculatorResultMonth.text(resultMonthD.toFixed(0) + ' $');
 	});

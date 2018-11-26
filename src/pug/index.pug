@@ -331,7 +331,7 @@ block main-content
 												label(for='daily-calculator-amount-val') Какую сумму вы хотите инвестировать
 												input#daily-calculator-amount-val.daily-calculator-amount-val(type='text', value='', placeholder='0', onchange='document.getElementById("daily-calculator-range").value=this.value', onkeypress="return event.keyCode != 13;")
 											.daily-calculator-row
-												input#daily-calculator-range.daily-calculator-range(type='range', min='0', max='50000', value='0', step='1', required='', onchange='document.getElementById("daily-calculator-amount-val").value=this.value')
+												input#daily-calculator-range.daily-calculator-range(type='range', min='10', max='50000', value='0', step='1', required='', onchange='document.getElementById("daily-calculator-amount-val").value=this.value')
 											.monthly-calculator-row
 												span.nums 0
 												span.nums 10 000

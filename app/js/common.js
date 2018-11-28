@@ -17,7 +17,7 @@ $(function() {
 	$(scrollBottom).click(function() {
 		$('html, body').animate({
 			scrollTop: $("#scrollToBlock").offset().top
-		}, 2000);
+		}, 700);
 	});
 });
 
@@ -27,7 +27,7 @@ $(function() {
 	$(scrollBottom1).click(function() {
 		$('html, body').animate({
 			scrollTop: $("#scrollToBlock1").offset().top
-		}, 2000);
+		}, 700);
 	});
 });
 

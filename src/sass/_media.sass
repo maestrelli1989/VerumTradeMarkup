@@ -149,8 +149,8 @@
 			p
 				padding-left: 0
 		.feedback-block
-			position: static
 			margin-top: 150px
+			left: 0
 		.marketing-page
 			.third-block
 				.page-headline
@@ -386,6 +386,8 @@
 					margin: 50px auto 0
 		.eighth-block
 			padding: 135px 0 110px
+		.feedback-block
+			position: static
 	.marketing-page
 		.first-block
 			.content-wrapper
@@ -500,6 +502,9 @@
 				p
 					br
 						display: none
+	.feedback-block
+		&:after
+			display: none!important
 
 @media screen and (max-width: 1250px)
 	.home-page

@@ -128,6 +128,7 @@ table
 	text-align: center
 	padding-top: 90px
 	margin-bottom: 50px
+	position: relative
 	.pre-headline
 		color: $white-color
 	.page-headline
@@ -139,6 +140,18 @@ table
 		font-family: $regular-font
 		font-size: 18px
 		padding-left: 9px
+	&:after
+		position: absolute
+		top: -65px
+		left: -200px
+		display: block
+		content: ''
+		background-image: url(../images/pattern-3.png)
+		background-repeat: no-repeat
+		background-size: contain
+		width: 1178px
+		height: 368px
+		margin: 0 auto
 
 /**
 	Tooltip styles

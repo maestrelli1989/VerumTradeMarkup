@@ -517,7 +517,7 @@
 	.page-headline
 		padding-left: 15px
 	.faq-nav
-		border: 1px solid $accent-gray-color
+		border: 1px solid rgba(0,0,0,.125)
 		border-radius: 3px
 		padding: 4px
 		width: 100%
@@ -594,7 +594,7 @@
 						cursor: pointer
 					&:after
 						font-family: Material-Design-Iconic-Font
-						content: "\f278"
+						content: "\f273"
 						top: 50%
 						position: absolute
 						right: 25px
@@ -617,7 +617,7 @@
 							background-color: $accent-blue-color
 					&.collapsed
 						&:after
-							content: "\f273"
+							content: "\f278" 
 			.collapse
 				width: 100%
 			.card-body
@@ -631,6 +631,7 @@
 					text-align: left
 			&:hover
 				box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
+				border-color: transparent
 		.blue-card
 			border-color: $accent-blue-color
 			border-bottom-color: $accent-blue-color!important

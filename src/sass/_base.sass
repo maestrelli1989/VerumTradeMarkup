@@ -31,6 +31,13 @@ ul, ol, dl
 .ta-c
 	text-align: center!important
 
+.dropdown-toggle
+	&:after
+		display: none
+	.zmdi-chevron-down
+		display: inline-block
+		padding-left: 10px
+
 /**
 	Headline typography styles
 	*/
@@ -229,11 +236,20 @@ table
 	animation-delay: 0.5s
 	position: relative
 	z-index: 99999
-	width: 42px
+	width: 100%
 	margin-top: 150px
 	margin-left: 15px
+	cursor: pointer
 	img
+		width: 42px
 		cursor: pointer
+	span
+		font-size: 16px
+		font-family: $regular-font
+		color: #6469ae
+		line-height: 42px
+		display: inline-block
+		padding-left: 15px
 
 .fadeInAnimated 
 	opacity: 0

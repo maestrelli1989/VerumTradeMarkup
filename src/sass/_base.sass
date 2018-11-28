@@ -10,6 +10,7 @@
 @import "buttons"
 @import "feedback-modal"
 @import "investor-modal"
+@import "photo-video-modal"
 
 /**
 	Basic normalize
@@ -195,45 +196,37 @@ table
 	*/
 
 #first
-	animation-delay: 1s
+	animation-delay: 0.1s
 
 #second
-	animation-delay: 1.5s
+	animation-delay: 0.2s
 
 #third
-	animation-delay: 2s
+	animation-delay: 0.3s
 
 #fourth
-	animation-delay: 2.5s
+	animation-delay: 0.4s
 
 #fifth
-	animation-delay: 3s
-	top: 271px
-	left: 98px
+	animation-delay: 0.5s
 
 #sixth
-	animation-delay: 3.5s
-	top: 170px
-	left: 281px
+	animation-delay: 0.5s
 
 #seventh
-	animation-delay: 4s
-	top: 94px
-	left: 456px
+	animation-delay: 0.5s
 
 #eighth
-	animation-delay: 4.5s
-	top: -33px
-	left: 560px
+	animation-delay: 0.5s
 
 #nineth
-	animation-delay: 5s
+	animation-delay: 0s
 
 #tenth
-	animation-delay: 5.5s
+	animation-delay: 0s
 
 #scrollBottom
-	animation-delay: 5.5s
+	animation-delay: 0.5s
 	position: relative
 	z-index: 99999
 	width: 42px
@@ -244,15 +237,15 @@ table
 
 .fadeInAnimated 
 	opacity: 0
-	animation: fadeIn 2s forwards
+	animation: fadeIn 0.7s forwards
 
 .toTopAnimated
 	opacity: 0
-	animation: toTop 2s forwards
+	animation: toTop 0.7s forwards
 
 .toBottomAnimated
 	opacity: 0
-	animation: toBottom 2s forwards
+	animation: toBottom 0.7s forwards
 
 /**
 	Hidden input / textarea placeholders on focus
@@ -289,41 +282,6 @@ textarea::focus
 	outline: 0
 	label
 		display: none
-
-/**
-	Home page dollar images styles
-	*/
-
-.white-circle
-	background-color: $white-color
-	width: 15px
-	height: 15px
-	position: relative
-	border-radius: 50%
-	display: inline-block
-	z-index: 888
-	visibility: hidden
-
-.dollar-img
-	position: relative
-	z-index: 888
-	display: inline-block
-
-.dollar-img-1
-	top: 249px!important
-	left: -7px!important
-
-.dollar-img-2
-	top: 150px!important
-	left: 120px!important
-
-.dollar-img-3
-	top: 73px!important
-	left: 237px!important
-
-.dollar-img-4
-	top: -53px!important
-	left: 285px!important
 
 /**
 	Calculator input range styles

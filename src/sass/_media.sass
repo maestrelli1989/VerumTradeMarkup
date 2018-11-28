@@ -9,20 +9,10 @@
 @import "vars"
 
 @media screen and (max-width: 1900px)
-	.home-page
-		.first-screen-block
-			.fixed-width-wrapper
-				.gradient,
-				.dollar-img-1,
-				.dollar-img-2,
-				.dollar-img-3,
-				.dollar-img-4,
-				.white-circle
-					display: none
 	#nineth
-		animation-delay: 2.5s
+		animation-delay: 1s
 	#tenth, #scrollBottom
-		animation-delay: 3s
+		animation-delay: 1s
 
 @media screen and (max-width: 1500px)
 	.top-footer
@@ -46,9 +36,6 @@
 		position: static
 		p
 			padding-left: 0
-	#scrollBottom
-		margin-left: 0
-		display: none
 	.home-page
 		.first-screen-block
 			.fixed-width-wrapper
@@ -59,6 +46,13 @@
 						padding-left: 0
 					.custom-btn
 						margin-left: 0
+				.right-side-content
+					.gradient
+						display: none
+					.gradient-min
+						display: block
+					.img-wrap
+						padding-left: 350px
 		.second-block
 			.flex-block
 				margin-left: 0
@@ -350,8 +344,7 @@
 	br
 		display: none!important
 	#scrollBottom
-		margin-left: auto
-		margin-right: auto
+		display: none
 	.home-page
 		.first-screen-block
 			position: static
@@ -370,6 +363,14 @@
 						margin-left: auto
 						margin-right: auto
 						display: block
+				.right-side-content
+					display: none
+					.gradient
+						display: none
+					.img-wrap
+						display: none
+						.dollar-img
+							display: none
 		.second-block
 			padding-top: 30px
 			height: auto
@@ -628,6 +629,10 @@
 			.flex-block
 				.flex-item
 					max-width: 225px
+					.hidden-content
+						font-size: 16px
+					&:hover
+						height: 450px
 		.company-page-hp-top
 			padding-bottom: 90px
 		.company-page-hp-middle
@@ -1279,6 +1284,10 @@
 				.secondary-btn
 					margin-left: auto
 					margin-top: 15px
+	.faq-page
+		.faq-nav
+			.nav-link
+				font-size: 14px
 
 @media screen and (max-width: 350px)
 	.page-headline

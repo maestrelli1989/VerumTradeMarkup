@@ -21,6 +21,16 @@ $(function() {
 	});
 });
 
+
+$(function() {
+	var scrollBottom1 = $("#third");
+	$(scrollBottom1).click(function() {
+		$('html, body').animate({
+			scrollTop: $("#scrollToBlock1").offset().top
+		}, 2000);
+	});
+});
+
 /* Add blue-border to active faq accordion item */
 
 (function() {
@@ -51,6 +61,7 @@ $(document).ready( function () {
 	var resultMonth, resultYear;
 	var calculator = $('.monthly-calculator');
 	var calculatorRange = calculator.find('.monthly-calculator-range');
+	var calculatorForecastMonth = calculator.find('.monthly-calculator-forecast-month');
 	var calculatorResultMonth = calculator.find('.monthly-calculator-result-month');
 	var calculatorResultYear = calculator.find('.monthly-calculator-result-year');
 	var amountVal = calculator.find('.monthly-calculator-amount-val');
@@ -59,21 +70,27 @@ $(document).ready( function () {
 		amountVal.val(calculatorRange.val());
 		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
 			resultMonth = calculatorRange.val() * 0.16;
+			calculatorForecastMonth.text('16%');
 		}
 		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
 			resultMonth = calculatorRange.val() * 0.17;
+			calculatorForecastMonth.text('17%');
 		}
 		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
 			resultMonth = calculatorRange.val() * 0.18;
+			calculatorForecastMonth.text('18%');
 		}
 		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
 			resultMonth = calculatorRange.val() * 0.19;
+			calculatorForecastMonth.text('19%');
 		}
 		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
 			resultMonth = calculatorRange.val() * 0.20;
+			calculatorForecastMonth.text('20%');
 		}
 		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
 			resultMonth = calculatorRange.val() * 0.21;
+			calculatorForecastMonth.text('21%');
 		}
 		resultYear = calculatorRange.val() * 1.25;
 		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');
@@ -85,21 +102,27 @@ $(document).ready( function () {
 		calculatorRange.val(amountVal.val());
 		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
 			resultMonth = calculatorRange.val() * 0.16;
+			calculatorForecastMonth.text('16%');
 		}
 		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
 			resultMonth = calculatorRange.val() * 0.17;
+			calculatorForecastMonth.text('17%');
 		}
 		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
 			resultMonth = calculatorRange.val() * 0.18;
+			calculatorForecastMonth.text('18%');
 		}
 		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
 			resultMonth = calculatorRange.val() * 0.19;
+			calculatorForecastMonth.text('19%');
 		}
 		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
 			resultMonth = calculatorRange.val() * 0.20;
+			calculatorForecastMonth.text('20%');
 		}
 		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
 			resultMonth = calculatorRange.val() * 0.21;
+			calculatorForecastMonth.text('21%');
 		}
 		resultYear = calculatorRange.val() * 1.25;
 		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');
@@ -111,21 +134,27 @@ $(document).ready( function () {
 		calculatorRange.val(amountVal.val());
 		if(calculatorRange.val() >= 10 && calculatorRange.val() <= 499) {
 			resultMonth = calculatorRange.val() * 0.16;
+			calculatorForecastMonth.text('16%');
 		}
 		if(calculatorRange.val() >= 500 && calculatorRange.val() <= 1499) {
 			resultMonth = calculatorRange.val() * 0.17;
+			calculatorForecastMonth.text('17%');
 		}
 		if(calculatorRange.val() >= 1500 && calculatorRange.val() <= 4999) {
 			resultMonth = calculatorRange.val() * 0.18;
+			calculatorForecastMonth.text('18%');
 		}
 		if(calculatorRange.val() >= 5000 && calculatorRange.val() <= 9999) {
 			resultMonth = calculatorRange.val() * 0.19;
+			calculatorForecastMonth.text('19%');
 		}
 		if(calculatorRange.val() >= 10000 && calculatorRange.val() <= 19999) {
 			resultMonth = calculatorRange.val() * 0.20;
+			calculatorForecastMonth.text('20%');
 		}
 		if(calculatorRange.val() >= 20000 && calculatorRange.val() <= 50000) {
 			resultMonth = calculatorRange.val() * 0.21;
+			calculatorForecastMonth.text('21%');
 		}
 		resultYear = calculatorRange.val() * 1.25;
 		calculatorResultMonth.text(resultMonth.toFixed(0) + ' $');

@@ -34,18 +34,17 @@ block main-content
 						svg#button(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 36.1 25.8', enable-background='new 0 0 36.1 25.8', xml:space='preserve')
 							g
 								polyline(fill='none', stroke='#FFFFFF', stroke-width='3', stroke-miterlimit='10', points='22.2,1.1 34,12.9 22.2,24.7')
-					.white-circle.fadeInAnimated#fifth
-					.white-circle.fadeInAnimated#sixth
-					.white-circle.fadeInAnimated#seventh
-					.white-circle.fadeInAnimated#eighth
-					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-1.fadeInAnimated#fifth
-					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-2.fadeInAnimated#sixth
-					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-3.fadeInAnimated#seventh
-					img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-4.fadeInAnimated#eighth
 					img.phone.toTopAnimated#nineth(src="./images/phone.png")
 					#scrollBottom.toTopAnimated
 						img(src="./images/move-to-next-screen.png", alt="Move to next screen")
-				img.gradient.fadeInAnimated#fourth(src="./images/gradient.png")
+				.right-side-content
+					img.gradient.fadeInAnimated#fourth(src="./images/gradient.png")
+					img.gradient.gradient-min.fadeInAnimated#fourth(src="./images/gradient-min.png")
+					.img-wrap
+						img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-1.fadeInAnimated#fifth
+						img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-2.fadeInAnimated#sixth
+						img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-3.fadeInAnimated#seventh
+						img(src="./images/usd-1.png", alt="usd").dollar-img.dollar-img-4.fadeInAnimated#eighth
 		.second-block
 			.container
 				.flex-block
@@ -53,22 +52,22 @@ block main-content
 						include svg/_growth
 						.item-title ТОП-1 аналитик
 						.item-subtitle на TradingView
-						.hidden-content Lorem ipsum dolor sit amet
+						.hidden-content 5 лет опыта в трейдинге. Основатель аналитической компании Excavo Family, управляющей активами VerumTrade
 					.flex-item.flex-item-2
 						include svg/_profit
 						.item-title Собственная биржа
 						.item-subtitle и криптовалюта
-						.hidden-content Целью является обеспечение быстрых и безопасных платежей среди пользователей системы.
+						.hidden-content Целью является обеспечение быстрых и безопасных платежей среди всех пользователей системы
 					.flex-item.flex-item-3
 						include svg/_debit-card
 						.item-title Ввод и вывод денег
 						.item-subtitle Visa/Mastercard
-						.hidden-content Lorem ipsum dolor sit amet
+						.hidden-content Выплаты производятся ежедневно на visa/mastercard. Вы также можете совершать финансовые операции в криптовалюте
 					.flex-item.flex-item-4
 						include svg/_document
 						.item-title Юридический договор
 						.item-subtitle с инвестором
-						.hidden-content Lorem ipsum dolor sit amet
+						.hidden-content Юридический договор свыше 5000$. Данную возможность необходимо обсудить с тех. поддержкой или пригласившим Вас партнером
 		.company-page.company-page-hp-top#scrollToBlock
 			.first-block
 				.container
@@ -93,12 +92,12 @@ block main-content
 								| успешной работы на конкурентном рынке.
 							.btn-row
 								+button-name("Подробнее")
-								a(href="javascript:void(0);").secondary-btn
+								a(href="./files/VerumTradeПрезентация.pdf", target="_blank").secondary-btn
 									span Скачать PDF
 									svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24')
 										path(fill='#3469f5' d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z')
 						.col-lg-6.col-md-12
-							a(href="javascript:void(0);").pulse
+							a(href="https://www.youtube.com/watch?v=sYuRR2Ud9oI", target="_blank").pulse
 								// ?xml version="1.0" encoding="UTF-8" standalone="no"?
 								svg#svg2(xmlns:dc='http://purl.org/dc/elements/1.1/', xmlns:cc='http://creativecommons.org/ns#', xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#', xmlns:svg='http://www.w3.org/2000/svg', xmlns='http://www.w3.org/2000/svg', version='1.1', viewBox='0 0 480 480', height='480', width='480')
 									metadata#metadata10
@@ -110,7 +109,7 @@ block main-content
 									defs#defs8
 									path#path4(fill='#ffffff' d='M 190,340 290,240 190,140 Z')
 							img(src="./images/about-us.png", alt="About us", style="width: 514px; height: 515px;")
-		.third-block
+		.third-block#scrollToBlock1
 			.container
 				h6.pre-headline.ta-c Сделайте правильный выбор
 				h1.page-headline.ta-c Какие риски несут популярные 
@@ -308,7 +307,7 @@ block main-content
 												span.nums 50 000
 											.monthly-calculator-row
 												.monthly-calculator-forecast-month-wrapper
-													span.monthly-calculator-forecast-month 12%
+													span.monthly-calculator-forecast-month
 												.monthly-calculator-info Прогнозированный процент в месяц
 													span  *
 												.monthly-calculator-forecast-year-wrapper
@@ -535,7 +534,7 @@ block main-content
 								svg#button(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 36.1 25.8', enable-background='new 0 0 36.1 25.8', xml:space='preserve')
 									g
 										polyline(fill='none', stroke='#FFFFFF', stroke-width='3', stroke-miterlimit='10', points='22.2,1.1 34,12.9 22.2,24.7')
-							a(href="javascript:void(0);").secondary-btn
+							a(href="marketing.html").secondary-btn
 								span Ранги и премии
 								svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewBox='0 0 24 24')
 									path(fill="#3469f5" d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z')

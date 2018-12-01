@@ -610,7 +610,135 @@
 						i
 							left: 15px
 
+/**
+	Single post page styles
+	*/
 
+.post-page
+	padding-top: 92px
+	padding-bottom: 99px
+	.pre-headline
+		margin-left: 17px
+	.page-headline
+		padding-left: 8px
+	img
+		margin-bottom: 100px
+	.share-block
+		height: 400px
+		position: relative
+		a
+			margin-bottom: 11px
+			width: 46px
+			height: 46px
+			display: inline-block
+			img
+				margin-bottom: 0
+		span
+			transform: rotate(-90deg)
+			display: inline-block
+			font-size: 18px
+			font-family: $regular-font
+			color: rgb(147, 147, 147)
+			line-height: 1.9
+			width: 220px
+			position: absolute
+			left: -90px
+			top: 255px
+	.content
+		width: 100%
+		max-width: 790px
+		margin: 0 auto
+		h3
+			font-size: 36px
+			font-family: $bold-font
+			color: rgb(32, 32, 32)
+			line-height: 1.2
+			text-align: left
+			padding-bottom: 50px
+		h4
+			font-size: 24px
+			font-family: $bold-font
+			color: rgb(32, 32, 32)
+			line-height: 1.25
+			padding-bottom: 50px
+		p
+			font-size: 18px
+			font-family: $regular-font
+			color: rgb(32, 32, 32)
+			line-height: 1.333
+			padding-bottom: 75px
+		ul, ol
+			li
+				padding-bottom: 30px
+				padding-left: 40px
+				font-size: 18px
+				font-family: $regular-font
+				color: rgb(32, 32, 32)
+				line-height: 1.3
+		ol
+			counter-reset: item
+			li
+				display: block
+				position: relative
+				&:before
+					content: counter(item) ". "
+					counter-increment: item
+					color: #356af5
+					position: absolute
+					left: 0
+		ul
+			li 
+				position: relative
+				&:before
+					position: absolute
+					display: block
+					content: ''
+					background-image: url(../images/bullet.png)
+					background-repeat: no-repeat
+					width: 11px
+					height: 11px
+					top: 5px
+					left: 0
+		blockquote
+			border-radius: 10px
+			background-color: rgb(234, 240, 254)
+			width: 100%
+			padding: 65px 155px
+			font-size: 24px
+			font-family: $regular-font
+			color: rgb(53, 106, 245)
+			line-height: 1.3
+			text-align: center
+			margin: 40px 0 70px 0
+		.prev-next-block
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			a
+				padding: 50px
+				transition: all 500ms
+				background-color: #fff
+				border-radius: 10px
+				h5
+					font-size: 18px
+					color: #000
+					line-height: 1.9
+					transition: all 500ms
+				p
+					font-size: 18px
+					font-family: $regular-font
+					color: #000
+					line-height: 1.2
+					padding-bottom: 0
+					transition: all 500ms
+				&:hover
+					text-decoration: none
+					background-color: rgb(76,133,244)
+					h5, p 
+						color: #fff
+				&:focus,
+				&:active
+					outline: 0
 /**
 	FAQ page styles
 	*/
@@ -2166,7 +2294,7 @@
 	.mobile-menu
 		overflow-y: auto
 		.overlay-content
-			top: 15%
+			top: 10%
 		a
 			font-size: 18px
 			line-height: 26px

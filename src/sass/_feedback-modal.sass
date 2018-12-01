@@ -13,37 +13,28 @@
 	Modal animation
 	*/
 
-@-webkit-keyframes animateModal
-	from
-		top: -300px
-		opacity: 0
-	to
-		top: 0
-		opacity: 1
+@keyframes unfoldIn 
+	0%
+		transform: scaleY(.005) scaleX(0)
+	50%
+		transform: scaleY(.005) scaleX(1)
+	100%
+		transform: scaleY(1) scaleX(1)
 
-@-moz-keyframes animateModal
-	from
-		top: -300px
-		opacity: 0
-	to
-		top: 0
-		opacity: 1
 
-@-o-keyframes animateModal
-	from
-		top: -300px
-		opacity: 0
-	to
-		top: 0
-		opacity: 1
+@keyframes unfoldOut
+	0%
+		transform: scaleY(1) scaleX(1)
+	50%
+		transform: scaleY(.005) scaleX(1)
+	100%
+		transform: scaleY(.005) scaleX(0)
 
-@keyframes animateModal
-	from
-		top: -300px
-		opacity: 0
-	to
-		top: 0
-		opacity: 1
+@keyframes zoomIn
+	0%
+		transform: scale(0)
+	100%
+		transform: scale(1)
 
 /**
 	Modal styles
@@ -53,7 +44,7 @@
 	display: none
 	position: fixed
 	z-index: 889
-	padding-top: 0
+	padding-top: 50px
 	left: 0
 	top: 0
 	width: 100%
@@ -61,6 +52,9 @@
 	overflow: auto
 	background-color: $violet-color
 	opacity: 0.9
+	&.in
+		transform: scaleY(.01) scaleX(0)
+		animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
 	.modal-content
 		position: relative
 		background-color: $white-color
@@ -70,10 +64,10 @@
 		border-radius: 5px
 		width: 100%
 		max-width: 770px
-		animation-name: animateModal
-		animation-duration: 1000ms
 		z-index: 888
 		transition: all 1000ms
+		transform: scale(0)
+		animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
 		.modal-header
 			padding: 0
 			border: none

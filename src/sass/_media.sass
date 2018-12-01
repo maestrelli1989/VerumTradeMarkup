@@ -158,7 +158,7 @@
 	.faq-page
 		padding-bottom: 70px
 		.faq-page-wrapper
-			padding-bottom: 30px
+			padding-bottom: 100px
 		.pre-headline
 			margin-left: auto
 			margin-right: auto
@@ -172,8 +172,8 @@
 		.accordion
 			justify-content: space-around
 		.feedback-block
-			position: static
 			margin-bottom: 0
+			left: 0
 			.pre-headline
 				margin-left: auto
 				margin-right: auto
@@ -181,9 +181,8 @@
 				padding-left: 0
 			p 
 				padding-left: 0
-			.custom-btn
-				position: static
-	.gallery-page
+	.gallery-page,
+	.news-page 
 		padding-bottom: 70px
 		.pre-headline
 			margin-left: auto
@@ -198,7 +197,6 @@
 			.flex-item
 				flex: auto
 				max-width: 370px
-				margin-bottom: 0px
 	.events-page
 		padding-bottom: 70px
 		.pre-headline
@@ -255,7 +253,6 @@
 			.page-headline
 				padding-left: 0
 		.feedback-block
-			position: static
 			margin-bottom: 0
 			.pre-headline
 				margin-left: auto
@@ -309,7 +306,6 @@
 		.sixth-block
 			padding-bottom: 0
 			.feedback-block
-				position: static
 				margin-bottom: 0
 				margin-top: 0
 				.pre-headline
@@ -330,6 +326,14 @@
 		display: none!important
 	#scrollBottom
 		display: none
+	.error-input,
+	.error-textarea
+		display: none
+	.faq-page
+		.faq-page-wrapper
+			padding-bottom: 30px
+		.feedback-block
+			position: static
 	.home-page
 		.first-screen-block
 			position: static
@@ -370,6 +374,11 @@
 			.wrapper
 				.right-side
 					right: 90px
+		.company-page-hp-middle
+			.col-xl-3
+				position: static
+				&:after
+					display: none
 		.company-page-hp-bottom
 			.third-block
 				p
@@ -386,6 +395,10 @@
 					margin: 50px auto 0
 		.eighth-block
 			padding: 135px 0 110px
+			.col-xl-3
+				position: static
+				&:after
+					display: none
 		.feedback-block
 			position: static
 	.marketing-page
@@ -406,6 +419,8 @@
 				max-width: 400px!important
 				height: auto!important
 				margin: 0 auto
+		.feedback-block
+			position: static
 	.events-page
 		.event-item
 			position: static
@@ -502,6 +517,9 @@
 				p
 					br
 						display: none
+		.sixth-block
+			.feedback-block
+				position: static
 	.feedback-block
 		&:after
 			display: none!important
@@ -583,6 +601,12 @@
 							display: block
 				&:last-child
 					margin-bottom: 0px
+	.news-page
+		.flex-block
+			justify-content: space-between
+			flex-direction: column
+			.flex-item
+				margin-bottom: 30px
 	.company-page
 		.first-block
 			img
@@ -968,6 +992,22 @@
 				line-height: 24px
 			.custom-btn
 				position: static
+	.news-page
+		padding-top: 50px
+		padding-bottom: 50px
+		.flex-block
+			margin-top: 0px
+			.flex-item
+				.bottom-half
+					.title
+						text-align: center
+					.content
+						text-align: center
+					.read-more
+						text-align: center
+						width: 100%
+				&:last-child
+					margin-bottom: 0px
 	.gallery-page
 		padding-top: 50px
 		padding-bottom: 50px

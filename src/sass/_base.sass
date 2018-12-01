@@ -152,6 +152,7 @@ table
 		width: 1178px
 		height: 368px
 		margin: 0 auto
+		z-index: -1
 
 /**
 	Tooltip styles
@@ -388,3 +389,27 @@ input[type=range]
 	&:focus
 		&::-ms-fill-lower, &::-ms-fill-upper
 			background: $accent-blue-color
+
+
+
+.error-input
+	width: 100%
+	max-width: 226.5px
+	height: 53px
+	border: 1px solid #366bf5
+	border-radius: 5px
+	position: absolute
+	bottom: 0
+	pointer-events: none
+	opacity: 0
+
+.error-textarea
+	width: 100%
+	max-width: 463px
+	height: 104px
+	border: 1px solid #366bf5
+	border-radius: 5px
+	position: absolute
+	bottom: 0
+	pointer-events: none
+	opacity: 0

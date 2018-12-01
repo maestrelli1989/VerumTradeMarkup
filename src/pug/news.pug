@@ -1,0 +1,109 @@
+extends layouts/_inner.pug
+
+block head-meta
+	+head-meta(
+	'Новости - VerumTrade', 
+	'Новости - VerumTrade', 
+	'https://verumtrade.com/news.html'
+	)
+
+block extra-js
+	script.
+		$(document).ready(function () {
+			size_li = $("#list-item .flex-item").length;
+			x=3;
+			$('#list-item .flex-item:lt('+x+')').css('display', 'block');
+			$('#loadMore').click(function () {
+				x= (x+3 <= size_li) ? x+3 : size_li;
+				$('#list-item .flex-item:lt('+x+')').css('display', 'block');
+			});
+		});
+
+block main-content
+	.news-page
+		.container
+			h6.pre-headline Новости
+			h1.page-headline.ta-c Новости рынка
+			.flex-block#list-item
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+				.flex-item
+					figure.top-half
+						img.image(src="./images/gallery.png", alt="image")
+					.bottom-half
+						.date
+							i.zmdi.zmdi-calendar-note
+							span 28.04.2017
+						h3.title Резкий обвал и рост: дали прогноз по биткоину в следующем году
+						p.content Такой прогноз со ссылкой на аналитиков рынка опубликовало издание Fxteam...
+						a(href="news-single.html", class="read-more") Читать дальше 
+							i.zmdi.zmdi-chevron-right
+			a(href="javascript:void(0);").custom-btn#loadMore
+				span Больше новостей
+				svg#button(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 36.1 25.8', enable-background='new 0 0 36.1 25.8', xml:space='preserve')
+					g
+						polyline(fill='none', stroke='#FFFFFF', stroke-width='3', stroke-miterlimit='10', points='22.2,1.1 34,12.9 22.2,24.7')

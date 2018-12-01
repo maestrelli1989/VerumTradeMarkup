@@ -9,8 +9,33 @@
 @import "vars"
 @import "buttons"
 
+@keyframes unfoldIn 
+	0%
+		transform: scaleY(.005) scaleX(0)
+	50%
+		transform: scaleY(.005) scaleX(1)
+	100%
+		transform: scaleY(1) scaleX(1)
+
+
+@keyframes unfoldOut
+	0%
+		transform: scaleY(1) scaleX(1)
+	50%
+		transform: scaleY(.005) scaleX(1)
+	100%
+		transform: scaleY(.005) scaleX(0)
+
+@keyframes zoomIn
+	0%
+		transform: scale(0)
+	100%
+		transform: scale(1)
+
 .photo-video-modal
 	background-color: $violet-color
+	transform: scaleY(.01) scaleX(0)
+	animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards
 	.window
 		width: 100%
 		max-width: 792px
@@ -20,7 +45,7 @@
 		background-color: $white-color
 		padding: 58px
 		position: relative
-		margin-top: 0
+		margin-top: 50px
 		opacity: 0.9
 		.close-modal
 			position: absolute

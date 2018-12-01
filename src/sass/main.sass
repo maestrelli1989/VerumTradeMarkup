@@ -17,6 +17,7 @@
 	align-items: center
 	height: 93px
 	border-bottom: 1px solid $honey-dew-color
+	z-index: 888889
 	.navbar
 		padding: 0
 		height: 93px
@@ -338,6 +339,7 @@
 					box-shadow: 0px 10px 80px rgba(0,0,0,0.1)
 				.form-group
 					margin-bottom: 11px
+					position: relative
 				.form-control
 					border: 1px solid $accent-gray-color
 					border-radius: 5px
@@ -502,6 +504,112 @@
 									color: $google-plus-color
 								.zmdi-twitter
 									color: $twitter-color
+
+/**
+	News page styles
+	*/
+
+.news-page
+	padding-top: 92px
+	padding-bottom: 99px
+	.pre-headline
+		margin-left: 17px
+	.page-headline
+		padding-left: 8px
+	#loadMore
+		display: block
+		margin: 15px auto 0
+		border-radius: 5px
+		background-image: -moz-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+		background-image: -webkit-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+		background-image: -ms-linear-gradient( 0deg, rgb(52,105,245) 0%, rgb(76,133,244) 100%)
+		width: 100%
+		max-width: 234px
+		height: 55px
+		outline: none
+		border: none
+		font-size: 16px
+		font-family: $bold-font
+		color: #fff
+		line-height: 55px
+		cursor: pointer
+		svg
+			transform: rotate(90deg)
+			top: 17px 
+	.flex-block
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		margin: 30px auto 0px
+		padding-left: 15px
+		.flex-item
+			flex: 1
+			width: 100%
+			max-width: 375px
+			border-radius: 5px
+			border: 1px solid $honey-dew-color
+			transition: all 500ms
+			margin-bottom: 30px
+			display: none
+			.top-half
+				position: relative
+				.image
+					opacity: 1
+					display: block
+					width: 100%
+					height: auto
+					transition: 500ms ease
+					backface-visibility: hidden
+			&:hover
+				box-shadow: 0 10px 80px rgba(0,0,0,.1)
+				border-color: transparent
+			.bottom-half
+				padding: 23px 29px 30px 30px
+				.date
+					color: $accent-gray-color
+					text-align: left
+					display: inline-block
+					span
+						font-size: 16px
+						font-family: $regular-font
+						line-height: 1.2
+						display: inline-block
+						padding-left: 7px
+				.title
+					font-size: 18px
+					font-family: $bold-font
+					color: $light-black-color
+					line-height: 1.2
+					text-align: left
+					padding: 11px 0px 14px
+					transition: all 500ms
+					&:hover
+						color: #3469f5
+				.content
+					font-size: 18px
+					font-family: $regular-font
+					color: #202020
+					line-height: 1.2
+				.read-more
+					font-size: 18px
+					font-family: $bold-font
+					color: #3469f5
+					display: inline-block
+					line-height: 1.2
+					transition: all 500ms
+					padding-top: 15px
+					i
+						position: relative
+						left: 5px
+						top: 1px
+						transition: all 500ms
+					&:hover
+						text-decoration: none
+						i
+							left: 15px
+
 
 /**
 	FAQ page styles
@@ -1162,7 +1270,7 @@
 .home-page-header
 	background-color: $violet-color
 	border-bottom: 1px solid $violet-color
-	z-index: 1
+	z-index: 888889
 	position: relative
 	.navbar
 		.brand
@@ -1271,6 +1379,7 @@
 				width: 100%
 				max-width: 1333px
 				height: 730px
+				z-index: 0
 				.gradient
 					position: absolute
 					right: 0
@@ -1868,13 +1977,13 @@
 			.flex-item-1
 				.item-num
 					left: 44px
-					padding-bottom: 44px
+					padding-bottom: 10px
 				.item-title
 				.item-content
 			.flex-item-2
 				.item-num
 					left: 83px
-					padding-bottom: 44px
+					padding-bottom: 10px
 				.item-img
 					left: 40px
 				.item-title
@@ -1884,7 +1993,7 @@
 			.flex-item-3
 				.item-num
 					left: 110px
-					padding-bottom: 44px
+					padding-bottom: 10px
 				.item-img
 					left: 66px
 				.item-title
@@ -1894,7 +2003,7 @@
 			.flex-item-4
 				.item-num
 					left: 120px
-					padding-bottom: 44px
+					padding-bottom: 10px
 				.item-img
 					left: 76px
 					margin-bottom: 28px
@@ -1919,10 +2028,28 @@
 				padding-right: 40px
 	.company-page-hp-middle
 		padding-top: 15px
-		.custom-btn
-			margin-top: 80px
-			margin-left: 40px
-			max-width: 242px
+		.col-xl-3
+			position: relative
+			&:after
+				position: absolute
+				top: 30px
+				left: 140px
+				display: block
+				content: ''
+				background-image: url(../images/pattern-1.png)
+				background-repeat: no-repeat
+				background-size: contain
+				width: 218px
+				height: 158px
+				margin: 0 auto
+				z-index: 0
+			.custom-btn
+				margin-top: 80px
+				margin-left: 40px
+				max-width: 242px
+				position: relative
+				display: inline-block
+				z-index: 1
 	.company-page-hp-bottom
 		padding-top: 20px
 		.third-block
@@ -1943,9 +2070,6 @@
 		background-color: $violet-color
 		padding-top: 157px
 		padding-bottom: 191px
-		.custom-btn
-			max-width: 280px
-			margin-top: 111px
 		.pre-headline
 			text-align: left
 			color: $white-color
@@ -1961,6 +2085,25 @@
 			font-family: $regular-font
 			font-size: 18px
 			padding-left: 16px
+		.col-xl-3
+			position: relative
+			&:after
+				position: absolute
+				top: 70px
+				left: 140px
+				display: block
+				content: ''
+				background-image: url(../images/pattern-2.png)
+				background-repeat: no-repeat
+				background-size: contain
+				width: 218px
+				height: 158px
+				margin: 0 auto
+				z-index: 0
+			.custom-btn
+				max-width: 280px
+				margin-top: 111px
+				z-index: 1
 	.feedback-block
 		margin-top: 257px
 		margin-bottom: 103px
@@ -1987,13 +2130,13 @@
 		top: 25%
 		width: 100%
 		text-align: center
-		margin-top: 30px
+		margin-top: 10px
 		padding-bottom: 45px
 	a
 		padding: 8px
 		text-decoration: none
-		font-size: 34px
-		line-height: 40px
+		font-size: 22px
+		line-height: 30px
 		color: darken($white-color, 35%)
 		display: block
 		transition: 500ms
@@ -2025,7 +2168,8 @@
 		.overlay-content
 			top: 15%
 		a
-			font-size: 20px
+			font-size: 18px
+			line-height: 26px
 		.closebtn
 			font-size: 35px
 			line-height: 35px
